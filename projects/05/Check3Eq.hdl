@@ -1,0 +1,20 @@
+CHIP Check3Eq {
+
+     a0, a1, a2,
+     b0, b1, b2;
+
+     out[3];
+
+     PARTS:
+     
+     Xor(a=a0, b=b0, out=out0);
+     Xor(a=a1, b=b1, out=out1);
+     Xor(a=a2, b=b2, out=out2);
+     Or(a=out0, b=out1, out=out01);
+     Or(a=out1, b=out2, out=out12);
+     Or(a=out01, out=out12, out=outPre);
+     Not(in=outPre, out=out);
+
+}
+     
+     
