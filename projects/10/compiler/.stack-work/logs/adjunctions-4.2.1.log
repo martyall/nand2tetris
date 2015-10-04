@@ -1,0 +1,65 @@
+Configuring adjunctions-4.2.1...
+Building adjunctions-4.2.1...
+Preprocessing library adjunctions-4.2.1...
+[ 1 of 11] Compiling Data.Functor.Contravariant.Rep ( src/Data/Functor/Contravariant/Rep.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Data/Functor/Contravariant/Rep.o )
+[ 2 of 11] Compiling Control.Monad.Trans.Conts ( src/Control/Monad/Trans/Conts.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Monad/Trans/Conts.o )
+
+src/Control/Monad/Trans/Conts.hs:4:14: Warning:
+    ‘Control.Monad.Trans.Conts’ is marked as Trustworthy but has been inferred as safe!
+
+src/Control/Monad/Trans/Conts.hs:36:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 3 of 11] Compiling Data.Functor.Contravariant.Adjunction ( src/Data/Functor/Contravariant/Adjunction.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Data/Functor/Contravariant/Adjunction.o )
+[ 4 of 11] Compiling Control.Monad.Trans.Contravariant.Adjoint ( src/Control/Monad/Trans/Contravariant/Adjoint.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Monad/Trans/Contravariant/Adjoint.o )
+
+src/Control/Monad/Trans/Contravariant/Adjoint.hs:4:14: Warning:
+    ‘Control.Monad.Trans.Contravariant.Adjoint’ is marked as Trustworthy but has been inferred as safe!
+
+src/Control/Monad/Trans/Contravariant/Adjoint.hs:38:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 5 of 11] Compiling Data.Functor.Rep ( src/Data/Functor/Rep.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Data/Functor/Rep.o )
+[ 6 of 11] Compiling Data.Functor.Adjunction ( src/Data/Functor/Adjunction.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Data/Functor/Adjunction.o )
+
+src/Data/Functor/Adjunction.hs:34:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 7 of 11] Compiling Control.Comonad.Trans.Adjoint ( src/Control/Comonad/Trans/Adjoint.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Comonad/Trans/Adjoint.o )
+
+src/Control/Comonad/Trans/Adjoint.hs:4:14: Warning:
+    ‘Control.Comonad.Trans.Adjoint’ is marked as Trustworthy but has been inferred as safe!
+
+src/Control/Comonad/Trans/Adjoint.hs:25:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 8 of 11] Compiling Control.Monad.Trans.Adjoint ( src/Control/Monad/Trans/Adjoint.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Monad/Trans/Adjoint.o )
+
+src/Control/Monad/Trans/Adjoint.hs:4:14: Warning:
+    ‘Control.Monad.Trans.Adjoint’ is marked as Trustworthy but has been inferred as safe!
+
+src/Control/Monad/Trans/Adjoint.hs:25:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[ 9 of 11] Compiling Control.Monad.Representable.Reader ( src/Control/Monad/Representable/Reader.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Monad/Representable/Reader.o )
+[10 of 11] Compiling Control.Monad.Representable.State ( src/Control/Monad/Representable/State.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Monad/Representable/State.o )
+
+src/Control/Monad/Representable/State.hs:37:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+[11 of 11] Compiling Control.Comonad.Representable.Store ( src/Control/Comonad/Representable/Store.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Control/Comonad/Representable/Store.o )
+
+src/Control/Comonad/Representable/Store.hs:31:1: Warning:
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+In-place registering adjunctions-4.2.1...
+Installing library in
+/Users/martyall/.stack/snapshots/x86_64-osx/lts-3.4/7.10.2/lib/x86_64-osx-ghc-7.10.2/adjunctions-4.2.1-73euuJZUxiC5Yx5EIEXn8g
+Registering adjunctions-4.2.1...

@@ -1,0 +1,387 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-03 17:11:19.710007 UTC
+
+interface compi_67JlvSkZUoW2a5wLn384Tq:JackCodeGenerator.CodeGen 7102
+  interface hash: 619076a5685f1a3f3612f17e325393e4
+  ABI hash: bb3a7f450cb6c837a34d706cdddef62f
+  export-list hash: ce77a8935fdaf051f05eb4bebcfdecd7
+  orphan hash: 7cafa1d9cadb77e5d549939f7d9bf0df
+  flag hash: 3b8c762b79c35c7a6268e355dc8773ae
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  JackCodeGenerator.CodeGen.callFun
+  JackCodeGenerator.CodeGen.function
+  JackCodeGenerator.CodeGen.pop
+  JackCodeGenerator.CodeGen.push
+  JackCodeGenerator.CodeGen.variable
+  JackCodeGenerator.CodeGen.writeExpr
+  JackCodeGenerator.CodeGen.writeFunName
+  JackCodeGenerator.CodeGen.writeStmt
+  JackCodeGenerator.CodeGen.writeStmts
+module dependencies: JackParser.AST JackParser.Lexer
+                     JackParser.Operators JackParser.Parser JackParser.SymbolTable
+package dependencies: StateVar-1.1.0.1@State_6K4a3UqSdqh6lGAm1wlr9s
+                      adjunctions-4.2.1@adjun_73euuJZUxiC5Yx5EIEXn8g
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ base-4.8.1.0
+                      base-orphans-0.4.4@baseo_E55c3OEBLyu45sND7mOuE9
+                      bifunctors-5@bifun_6cWzSBWZD9ID5wcfOFIydn
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      comonad-4.2.7.2@comon_Iyp8zBsbnTG1MeVOAVEXig
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      contravariant-1.3.2@contr_Ex6x6hL6qVP0xeZutOTf0R
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      distributive-0.4.4@distr_IiTFZxvjHzA0FvKz3AU35Q
+                      exceptions-0.8.0.2@excep_8GsEeHgaIks3pVGk6GaELJ
+                      free-4.12.1@free_AW1LSLZ5gRE6OPcReQnEpn ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy integer-gmp-1.0.0.0
+                      kan-extensions-4.2.2@kanex_8tdsKOG6HCvHMXp3Tkw8cG
+                      lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b
+                      mmorph-1.0.4@mmorp_8dNpUU8QFPe77rrwKAb20b
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0
+                      prelude-extras-0.4@prelu_13F4lGS3Q6l43JZvPq8G4h
+                      pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR
+                      primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk
+                      profunctors-5.1.1@profu_HlacZlwi60PEvhf7633Eh6
+                      reflection-2@refle_7dRZJKJ0RoVKjlNBSuDj1U
+                      semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO
+                      semigroupoids-5.0.0.4@semig_AaxZ8J0J9AJFrgjq1J33Wj
+                      stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr
+                      tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW template-haskell-2.10.0.0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a
+                      vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         reflection-2@refle_7dRZJKJ0RoVKjlNBSuDj1U:Data.Reflection
+         stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr:Control.Monad.STM
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+family instance modules: adjunctions-4.2.1@adjun_73euuJZUxiC5Yx5EIEXn8g:Data.Functor.Rep
+                         base-4.8.1.0:Control.Applicative base-4.8.1.0:Data.Either
+                         base-4.8.1.0:Data.Functor.Identity base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:Data.Void
+                         base-4.8.1.0:GHC.Exts base-4.8.1.0:GHC.Generics
+                         base-4.8.1.0:GHC.TypeLits
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         kan-extensions-4.2.2@kanex_8tdsKOG6HCvHMXp3Tkw8cG:Data.Functor.Yoneda
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.At
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Internal.Indexed
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Internal.Zoom
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Reified
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Tuple
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Wrapped
+                         pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR:Text.PrettyPrint.HughesPJ
+                         primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk:Control.Monad.Primitive
+                         profunctors-5.1.1@profu_HlacZlwi60PEvhf7633Eh6:Data.Profunctor.Rep
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.List.NonEmpty
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.Semigroup
+                         tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashSet
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Storable
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:Data.Traversable 89769555cf5e62f4edd3d085405c2caa
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  JackParser.AST 2366cdca13908dd8002738c77b3fc53c
+  exports: 443fbfc8e8cebc6a0a67c7a24eef3eac
+  AST e014f9bbc1e4585e529e27f0cc7332b5
+  Access 3d615c16e1dca457597ceb95c88f08e9
+  App 34c483cc5975e56c5f3b5d08a7ee54f4
+  BExpr ec6e7b0e26b8c3c239d5b2327ba26512
+  BRANCH 40c97e369126159c4ca28a1002ef7df8
+  BoolConst e3606d71a8181adb7b8611dcedc6dcb2
+  CLASS b955a73fa866f6ede5ba5b9cf93e32ff
+  DO 8b4e3c3d76ae9a222aae97a6180435ad
+  EXPR c94dfaf0a76e5286e3c1da4858607a0c
+  Empty 3559bc55ff283e02b609b836b02bd042
+  FUN 008e22052769d307efb84bb2dbec3af4
+  IntConst 328e4fbfd0a8e6dfecb2abe8a99c7654
+  LET efd2ab14326a36e775bc6d8639a52dc9
+  RET bbfbc858744b588e572a68b197ec9784
+  UExpr 64e1a8015650f199db360aaf3b36b22b
+  VAR 4931e28f3a6cbf085922a1bfa1b1ab72
+  Var 0b31e59265e9c03656bbfdded7841dfb
+  WHILE b567ffca8d0e82a606bf7520ff525ff9
+import  -/  JackParser.Lexer 530b85fe2b24277601c13edea12f76d7
+  exports: ceb265d750e2ba0bb23743e627e31c17
+  Argument d558ef85eaaa825f6c1b8e58eb63d681
+import  -/  JackParser.Parser ce0e46fc5470f7806bfdb14004c537df
+  exports: 98a55ab176d6026a17fd3113de3ee202
+import  -/  JackParser.SymbolTable 949c7cf96ecc702a89f5729e0a67df65
+  exports: 71a03821de34726f0ad672db46ef84b0
+  Fun 2e3a0a82669753c7c7940090a9fcaf04
+  ID 4fa487704345cc7786c1c54715df4287
+  SymbolTable 0066868d9ca26c17ffd15ccd114e1ce2
+  Var 3d0776c10a91e4e70571cefced470585
+  Var ea6f6b9c578a7dc7e585764c053a89b9
+  builder 07c530b27376add68ea6b2b53ce36edf
+  clearLocals e38bc8765f64091d7315b047f67ae72a
+  getIndex 8fb7590fd992b23029ec382444bb895d
+  getV 944a87418544bff19ccdee0f6d31664d
+  getWhile 86aeeef9e26b59a3257064e53c2d9a5b
+  incIf ca2cb3fd10d7c635d66f8898a8e2fce4
+  name 1a3af7fa58059920db285ddf84295d40
+  putF 00084992174220979c0e9f53d257232f
+  putName 1c2b5c4e200270ebe52d59726e13f7af
+  putV 8054dab18c39ec01f69b106c33850142
+  varIndex 4e7933e349aa749aed85312d98b7c2b7
+  varScope 0dd68c5350849e50e7ede69937b661f4
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map 5e4cbf1ca2e6c8cfaecf2b4e95371357
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base 7ea108dc1481cad0b32efe810e49ad43
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.Reader 41eb3f27ab627120db9a4602ab0a88c2
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.State.Class a485e6dd398a6ce0122b254d3bf18f13
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.State.Lazy d96af44e8d2501342f4d849385ed921c
+import  -/  parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0:Text.Parsec.Prim 285cde77b6b24df2175f0525c84910d8
+import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Class ced5621141aaa24ab095912d5a649dcc
+import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.State.Lazy c08c12a521658e8ac939bca69680ffbc
+490d45a1efaf985e506641b52b8ba53e
+  $wvariable ::
+    JackParser.Lexer.Scope -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <S,1*U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ ww :: JackParser.Lexer.Scope ww1 :: GHC.Types.Int ->
+                 let {
+                   n :: [GHC.Types.Char]
+                   = GHC.CString.unpackAppendCString#
+                       " "#
+                       (case ww1 of ww2 { GHC.Types.I# ww3 ->
+                        case GHC.Show.$wshowSignedInt
+                               0
+                               ww3
+                               (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                        GHC.Types.: @ GHC.Types.Char ww5 ww6 } })
+                 } in
+                 case ww of wild {
+                   JackParser.Lexer.Field
+                   -> GHC.Base.++ @ GHC.Types.Char JackParser.Lexer.$fShowScope4 n
+                   JackParser.Lexer.Static
+                   -> GHC.Base.++ @ GHC.Types.Char JackParser.Lexer.$fShowScope3 n
+                   JackParser.Lexer.Local
+                   -> GHC.Base.++ @ GHC.Types.Char JackParser.Lexer.$fShowScope2 n
+                   JackParser.Lexer.Argument
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        JackParser.Lexer.$fShowScope1
+                        n }) -}
+97ae27ff106e5a58ca750df56774ccc1
+  callFun ::
+    JackParser.SymbolTable.ID -> GHC.Types.Int -> GHC.Base.String
+  {- Arity: 2, Strictness: <L,1*U><L,1*U(U)>,
+     Unfolding: (\ fn :: JackParser.SymbolTable.ID n :: GHC.Types.Int ->
+                 GHC.CString.unpackAppendCString#
+                   "call "#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      fn
+                      (GHC.CString.unpackAppendCString#
+                         " "#
+                         (case n of ww2 { GHC.Types.I# ww3 ->
+                          case GHC.Show.$wshowSignedInt
+                                 0
+                                 ww3
+                                 (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                          GHC.Base.++
+                            @ GHC.Types.Char
+                            (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                            JackCodeGenerator.CodeGen.callFun1 } })))) -}
+e1e2249dcc1e9d846b2e00190fffb90d
+  callFun1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+8b7775eb62e0c26239bed93372a2c0e2
+  function ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.ID -> GHC.Types.Int -> GHC.Base.String
+  {- Arity: 3, Strictness: <L,1*U><L,1*U><L,1*U(U)>,
+     Unfolding: (\ cn :: JackParser.SymbolTable.ID
+                   nm :: JackParser.SymbolTable.ID
+                   n :: GHC.Types.Int ->
+                 GHC.CString.unpackAppendCString#
+                   "function "#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      cn
+                      (GHC.CString.unpackAppendCString#
+                         "."#
+                         (GHC.Base.++
+                            @ GHC.Types.Char
+                            nm
+                            (GHC.CString.unpackAppendCString#
+                               " "#
+                               (case n of ww2 { GHC.Types.I# ww3 ->
+                                case GHC.Show.$wshowSignedInt
+                                       0
+                                       ww3
+                                       (GHC.Types.[] @ GHC.Types.Char) of ww4 { (#,#) ww5 ww6 ->
+                                GHC.Base.++
+                                  @ GHC.Types.Char
+                                  (GHC.Types.: @ GHC.Types.Char ww5 ww6)
+                                  JackCodeGenerator.CodeGen.callFun1 } })))))) -}
+a1b9a9ffe54061c3f3db881f47fdbdc5
+  pop :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ s :: GHC.Base.String ->
+                 GHC.CString.unpackAppendCString#
+                   "pop "#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      s
+                      JackCodeGenerator.CodeGen.callFun1)) -}
+c75788ebef3414697cc965c7f4d3be08
+  push :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ s :: GHC.Base.String ->
+                 GHC.CString.unpackAppendCString#
+                   "push "#
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      s
+                      JackCodeGenerator.CodeGen.callFun1)) -}
+301494b87fb6117d756a6706ddb95d00
+  variable :: JackParser.SymbolTable.Var -> GHC.Base.String
+  {- Arity: 1, Strictness: <S(SL),1*U(1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ w :: JackParser.SymbolTable.Var ->
+                 case w of ww { JackParser.SymbolTable.Var ww1 ww2 ->
+                 JackCodeGenerator.CodeGen.$wvariable ww1 ww2 }) -}
+cfcc5e5f492f3e7823456a386c7d7291
+  writeExpr ::
+    JackParser.AST.EXPR
+    -> Control.Monad.Trans.State.Lazy.StateT
+         JackParser.SymbolTable.SymbolTable GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+c53ef1eb4437108ff1f87657bf3745b1
+  writeFunName ::
+    JackParser.SymbolTable.ID
+    -> Control.Monad.Trans.State.Lazy.StateT
+         JackParser.SymbolTable.SymbolTable GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,U>,
+     Unfolding: (\ fn :: JackParser.SymbolTable.ID ->
+                 case GHC.List.elem
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        JackCodeGenerator.CodeGen.writeFunName1
+                        fn of wild {
+                   GHC.Types.False
+                   -> let {
+                        lvl10 :: [GHC.Types.Char]
+                        = GHC.CString.unpackAppendCString# "."# fn
+                      } in
+                      (\ eta :: JackParser.SymbolTable.SymbolTable ->
+                       GHC.Base.Just
+                         @ ([GHC.Types.Char], JackParser.SymbolTable.SymbolTable)
+                         (case eta of wild1 { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                          GHC.Base.++ @ GHC.Types.Char x2 lvl10 },
+                          eta))
+                        `cast`
+                      (Sym (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                                <JackParser.SymbolTable.SymbolTable>_N
+                                <GHC.Base.Maybe>_R
+                                <GHC.Base.String>_N))
+                   GHC.Types.True
+                   -> (\ eta :: JackParser.SymbolTable.SymbolTable ->
+                       GHC.Base.Just
+                         @ (GHC.Base.String, JackParser.SymbolTable.SymbolTable)
+                         (fn, eta))
+                        `cast`
+                      (Sym (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                                <JackParser.SymbolTable.SymbolTable>_N
+                                <GHC.Base.Maybe>_R
+                                <GHC.Base.String>_N)) }) -}
+2c148f5c2a7e253afe4efd77c8fd6786
+  writeFunName1 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# '.') -}
+0daa6f32409a1d215ad616ebda3c8d59
+  writeStmt ::
+    JackParser.AST.AST
+    -> Control.Monad.Trans.State.Lazy.StateT
+         JackParser.SymbolTable.SymbolTable GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U> -}
+a38918ccbb453a3452916eb340cdd458
+  writeStmts ::
+    [JackParser.AST.AST]
+    -> Control.Monad.Trans.State.Lazy.StateT
+         JackParser.SymbolTable.SymbolTable GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ xs :: [JackParser.AST.AST] ->
+                 let {
+                   m1 :: Control.Monad.Trans.State.Lazy.StateT
+                           JackParser.SymbolTable.SymbolTable
+                           GHC.Base.Maybe
+                           [[GHC.Types.Char]]
+                   = JackCodeGenerator.CodeGen.writeStmts_go1 xs
+                 } in
+                 (\ s1 :: JackParser.SymbolTable.SymbolTable ->
+                  case m1
+                         `cast`
+                       (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                            <JackParser.SymbolTable.SymbolTable>_N
+                            <GHC.Base.Maybe>_R
+                            <[[GHC.Types.Char]]>_N)
+                         s1 of wild {
+                    GHC.Base.Nothing
+                    -> GHC.Base.Nothing
+                         @ (GHC.Base.String, JackParser.SymbolTable.SymbolTable)
+                    GHC.Base.Just a18
+                    -> GHC.Base.Just
+                         @ (GHC.Base.String, JackParser.SymbolTable.SymbolTable)
+                         (case a18 of wild1 { (,) a19 s' ->
+                          JackCodeGenerator.CodeGen.writeStmts_go a19 },
+                          case a18 of wild1 { (,) a19 s' -> s' }) })
+                   `cast`
+                 (Sym (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                           <JackParser.SymbolTable.SymbolTable>_N
+                           <GHC.Base.Maybe>_R
+                           <GHC.Base.String>_N))) -}
+3685645b9010afef1352cd1722a924ec
+  writeStmts_go :: [[GHC.Types.Char]] -> [GHC.Types.Char]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+72d54e4152618e0f1abce8222073b438
+  writeStmts_go1 ::
+    [JackParser.AST.AST]
+    -> Control.Monad.Trans.State.Lazy.StateT
+         JackParser.SymbolTable.SymbolTable
+         GHC.Base.Maybe
+         [[GHC.Types.Char]]
+  {- Arity: 1, Strictness: <S,1*U> -}
+"SPEC/JackCodeGenerator.CodeGen lift @ (StateT SymbolTable)" [ALWAYS] forall tpl :: Control.Monad.Trans.Class.MonadTrans
+                                                                                      (Control.Monad.Trans.State.Lazy.StateT
+                                                                                         JackParser.SymbolTable.SymbolTable)
+  Control.Monad.Trans.Class.lift @ (Control.Monad.Trans.State.Lazy.StateT
+                                      JackParser.SymbolTable.SymbolTable)
+                                 tpl
+  = Control.Monad.Trans.State.Lazy.$fMonadTransStateT_$clift
+      @ JackParser.SymbolTable.SymbolTable
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

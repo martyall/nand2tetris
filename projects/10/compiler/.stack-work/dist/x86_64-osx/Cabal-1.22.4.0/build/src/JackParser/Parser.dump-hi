@@ -1,0 +1,3034 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-03 17:11:16.034385 UTC
+
+interface compi_67JlvSkZUoW2a5wLn384Tq:JackParser.Parser 7102
+  interface hash: be0e24f4cd15375a148205a0b30f9e27
+  ABI hash: ce0e46fc5470f7806bfdb14004c537df
+  export-list hash: 98a55ab176d6026a17fd3113de3ee202
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 3e6fb97481ca3c41c4e9e8ac02c8acab
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  JackParser.Parser.access
+  JackParser.Parser.algebra
+  JackParser.Parser.bins
+  JackParser.Parser.call
+  JackParser.Parser.classDef
+  JackParser.Parser.classStatement
+  JackParser.Parser.comment
+  JackParser.Parser.elseSt
+  JackParser.Parser.expression
+  JackParser.Parser.fBody
+  JackParser.Parser.funDec
+  JackParser.Parser.ifBlock
+  JackParser.Parser.ifSt
+  JackParser.Parser.program
+  JackParser.Parser.returnSt
+  JackParser.Parser.statement
+  JackParser.Parser.symbols
+  JackParser.Parser.uns
+  JackParser.Parser.varAssign
+  JackParser.Parser.varDec
+  JackParser.Parser.whileSt
+module dependencies: JackParser.AST JackParser.Lexer
+                     JackParser.Operators
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0* binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mmorph-1.0.4@mmorp_8dNpUU8QFPe77rrwKAb20b
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+import  -/  base-4.8.1.0:Control.Monad dfea142d91349c4861427789d50d5b80
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  JackParser.AST 2366cdca13908dd8002738c77b3fc53c
+  exports: 443fbfc8e8cebc6a0a67c7a24eef3eac
+  AST e014f9bbc1e4585e529e27f0cc7332b5
+  Access 3d615c16e1dca457597ceb95c88f08e9
+  BRANCH 40c97e369126159c4ca28a1002ef7df8
+  BoolConst e3606d71a8181adb7b8611dcedc6dcb2
+  CLASS b955a73fa866f6ede5ba5b9cf93e32ff
+  DO 8b4e3c3d76ae9a222aae97a6180435ad
+  EXPR c94dfaf0a76e5286e3c1da4858607a0c
+  Empty 3559bc55ff283e02b609b836b02bd042
+  FUN 008e22052769d307efb84bb2dbec3af4
+  IntConst 328e4fbfd0a8e6dfecb2abe8a99c7654
+  LET efd2ab14326a36e775bc6d8639a52dc9
+  RET bbfbc858744b588e572a68b197ec9784
+  StrConst f4bc64104525ca02af9e123e4b221978
+  VAR 4931e28f3a6cbf085922a1bfa1b1ab72
+  Var 0b31e59265e9c03656bbfdded7841dfb
+  WHILE b567ffca8d0e82a606bf7520ff525ff9
+import  -/  JackParser.Lexer 530b85fe2b24277601c13edea12f76d7
+  exports: ceb265d750e2ba0bb23743e627e31c17
+  BA 83bc56e4a17f3a8c6eccfc8943dab248
+  BB 5d8a1f040d00b938db48b324bd4014e2
+  RB 7b68c35273f3c8edd6f8934179ccc310
+  UA 06284e3bf5a5440e6711a242eab0a847
+  UB 5e1b94504f1475abfdb7e6d3dc0b6fc2
+  bAOp 20327182f1b1b56a8fc33170d1dfa33e
+  bBOp 73bbbb5b3f299ddfc2d19c490dbb1715
+  boolean fe01ffa79782b97f884f05cecddab62e
+  braces 2e0e4c1813f93d3c94e941679f05b2ca
+  brackets 8bda5df8d9bf6e33e0e85a1e29122415
+  cmt 9b67c7d7ca662999bc371b2716d2d2ec
+  comma 0475bc9a0bed02d57e1f743874491e35
+  funType 785415576e1c9ef7eae373f3cffcd621
+  identifier c1ecf48790375f10a113b99db0cea7fc
+  integer ff9b871025c5342250cf3ed0bf5450b0
+  parens 1f388bfd690d0c2e8016101d540e5f5a
+  rBOp 426f275313eebdefc96aa71c4e1e86ba
+  reserved a4c5d1c80412e2aa942e205b50ddcb67
+  reservedOp f77e2558e519769dc85a796b2b7a79ff
+  scope b268e51722b59a8f5f862cf4aa3f7915
+  semi fb91e6b66c2d41fcfcdef39d83116c63
+  stringLiteral fcd28add16f98642153096dcebfc7b25
+  ttypes 4b5300db61dda3a5486476ccabaca0af
+  uAOp 555d201778b53f37e5bb7abbcf084f5d
+  uBOp 5890f10b068df2d196eaaf476a822b48
+import  -/  JackParser.Operators 51f9bd9270595769f7cf9a9ba24f6320
+  exports: 08fee34a630dedd4cd19e495d0f9ff0f
+  Algebra c3c9871f89550ab37bdba88f5f353898
+  expression bee0b9c9d960022d3ac08bab9dab46b5
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.Reader 41eb3f27ab627120db9a4602ab0a88c2
+import  -/  parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0:Text.Parsec c0bc06fb0aaf9f07c9c990b6feda62a0
+import  -/  parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0:Text.Parsec.Combinator 69f5c1efe41ef6c39f8bbae8eebb0a80
+import  -/  parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0:Text.Parsec.Prim 285cde77b6b24df2175f0525c84910d8
+import  -/  parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0:Text.Parsec.String 4b7d1159848b56228c8c8ce8ab90dc5a
+import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Reader 9746d4c93728fc65288e0bb0454e4d80
+477c1a4395400b3a0c5f58ccd7b2b58f
+  access :: Text.Parsec.String.Parser JackParser.AST.EXPR
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.access1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.EXPR>_R)) -}
+11d1da542c8349cc52c6c8b8496ae13a
+  access1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.EXPR
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.EXPR
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <JackParser.Lexer.Identifier>_R)
+                   @ b1
+                   eta
+                   (\ x :: JackParser.Lexer.Identifier
+                      eta7 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      eta8 :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.access2
+                      (JackParser.AST.Var x)
+                      @ b1
+                      eta7
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.EXPR
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError eta8 err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError eta8 err')))
+                   eta2
+                   (\ x :: JackParser.Lexer.Identifier
+                      eta7 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      eta8 :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.access2
+                      (JackParser.AST.Var x)
+                      @ b1
+                      eta7
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.EXPR
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError eta8 err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError eta8 err')))
+                   eta4 }) -}
+0325772c6f551d154284acf2385f53ac
+  access2 ::
+    JackParser.AST.EXPR
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> (JackParser.AST.EXPR
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (JackParser.AST.EXPR
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ nm :: JackParser.AST.EXPR
+                   @ b
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.EXPR
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: JackParser.AST.EXPR
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 JackParser.Parser.access3
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <JackParser.AST.EXPR>_R)
+                   @ b
+                   eta
+                   (\ x :: JackParser.AST.EXPR
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    eta1
+                      (JackParser.AST.Access nm x)
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta2
+                   (\ x :: JackParser.AST.EXPR
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    eta3
+                      (JackParser.AST.Access nm x)
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta4) -}
+acfec237404d22501b2b7576a02371eb
+  access3 ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      JackParser.AST.EXPR
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds20 @ JackParser.AST.EXPR JackParser.Parser.expression }) -}
+b2e22584166a27d4ccbfdfafdd6b27ae
+  algebra :: JackParser.Operators.Algebra
+  {- Strictness: m,
+     Unfolding: (JackParser.Operators.Algebra
+                   JackParser.Parser.algebra15
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.BOp>_R))
+                   JackParser.Parser.algebra10
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.UOp>_R))
+                   JackParser.Parser.algebra1
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.EXPR>_R))) -}
+17c97bd15f61a198e0e6b7b8e799acbb
+  algebra1 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   eta1 :: Text.Parsec.Prim.State GHC.Base.String ()
+                   eta2 :: JackParser.AST.EXPR
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: JackParser.AST.EXPR
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.AST.EXPR
+                   JackParser.Parser.algebra2
+                   @ b
+                   eta1
+                   eta2
+                   eta3
+                   eta4
+                   eta5) -}
+7ee02248b4f7c72a9a92dec894dc587e
+  algebra10 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> (JackParser.Lexer.UOp
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (JackParser.Lexer.UOp
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   eta1 :: Text.Parsec.Prim.State GHC.Base.String ()
+                   eta2 :: JackParser.Lexer.UOp
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: JackParser.Lexer.UOp
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.UOp
+                   JackParser.Parser.algebra11
+                   @ b
+                   eta1
+                   eta2
+                   eta3
+                   eta4
+                   eta5) -}
+87f8ce2358fb7e6c8b7123227bb34f7f
+  algebra11 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.Lexer.UOp]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.Lexer.UOp)
+                   JackParser.Parser.algebra14
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.UOp>_R))
+                   JackParser.Parser.algebra12) -}
+de520006879997b5cd0ddd40d36dedbd
+  algebra12 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.Lexer.UOp]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.Lexer.UOp)
+                   JackParser.Parser.algebra13
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.UOp>_R))
+                   (GHC.Types.[]
+                      @ (Text.Parsec.Prim.ParsecT
+                           GHC.Base.String
+                           ()
+                           Data.Functor.Identity.Identity
+                           JackParser.Lexer.UOp))) -}
+a036bf2bfb0d99634e09c8148cd4e272
+  algebra13 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.Lexer.UOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.Lexer.UOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.Lexer.UOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.Lexer.UOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Lexer.uAOp1
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.UAOp -> cok (JackParser.Lexer.UA x))
+                   cerr
+                   (\ x :: JackParser.Lexer.UAOp -> eok (JackParser.Lexer.UA x))
+                   eerr) -}
+bf8b91d74e6d6f19a346038f104faa04
+  algebra14 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.Lexer.UOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.Lexer.UOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.Lexer.UOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.Lexer.UOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Lexer.uBOp1
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.UBOp -> cok (JackParser.Lexer.UB x))
+                   cerr
+                   (\ x :: JackParser.Lexer.UBOp -> eok (JackParser.Lexer.UB x))
+                   eerr) -}
+53873a058b6c96de9b93d424756a2cd2
+  algebra15 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   eta1 :: Text.Parsec.Prim.State GHC.Base.String ()
+                   eta2 :: JackParser.Lexer.BOp
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: JackParser.Lexer.BOp
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.BOp
+                   JackParser.Parser.algebra16
+                   @ b
+                   eta1
+                   eta2
+                   eta3
+                   eta4
+                   eta5) -}
+1910cd6ebffd18b585bd4d2fbae9931d
+  algebra16 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.Lexer.BOp]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.Lexer.BOp)
+                   JackParser.Parser.algebra21
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.BOp>_R))
+                   JackParser.Parser.algebra17) -}
+6a178e231674e2175632e7466193c0d4
+  algebra17 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.Lexer.BOp]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.Lexer.BOp)
+                   JackParser.Parser.algebra20
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.BOp>_R))
+                   JackParser.Parser.algebra18) -}
+ac937035b70524c8c8c01e6ee6cc8994
+  algebra18 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.Lexer.BOp]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.Lexer.BOp)
+                   JackParser.Parser.algebra19
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.BOp>_R))
+                   (GHC.Types.[]
+                      @ (Text.Parsec.Prim.ParsecT
+                           GHC.Base.String
+                           ()
+                           Data.Functor.Identity.Identity
+                           JackParser.Lexer.BOp))) -}
+0045826a9987d8f7ec7304417f400d8d
+  algebra19 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,C(U)><L,U><L,C(U)><L,C(U)>,
+     Unfolding: (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.Lexer.BOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.Lexer.BOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.BAOp
+                   JackParser.Lexer.bAOp2
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.BAOp -> cok (JackParser.Lexer.BA x))
+                   cerr
+                   (\ x :: JackParser.Lexer.BAOp -> eok (JackParser.Lexer.BA x))
+                   eerr) -}
+aec28074061a6372981a22f8836af0c9
+  algebra2 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.EXPR]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.EXPR)
+                   JackParser.Parser.algebra9
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.EXPR>_R))
+                   JackParser.Parser.algebra3) -}
+0921b0fd35a149cd4495a20be2f0dd27
+  algebra20 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,C(U)><L,U><L,C(U)><L,C(U)>,
+     Unfolding: (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.Lexer.BOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.Lexer.BOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.RBOp
+                   JackParser.Lexer.rBOp2
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.RBOp -> cok (JackParser.Lexer.RB x))
+                   cerr
+                   (\ x :: JackParser.Lexer.RBOp -> eok (JackParser.Lexer.RB x))
+                   eerr) -}
+c28ff65eb441f049307d6afe73c62c7c
+  algebra21 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.Lexer.BOp
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,C(U)><L,U><L,C(U)><L,C(U)>,
+     Unfolding: (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.Lexer.BOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.Lexer.BOp
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.BBOp
+                   JackParser.Lexer.bBOp2
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.BBOp -> cok (JackParser.Lexer.BB x))
+                   cerr
+                   (\ x :: JackParser.Lexer.BBOp -> eok (JackParser.Lexer.BB x))
+                   eerr) -}
+2caaeea516dd1a3d3a86667f3e402c67
+  algebra3 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.EXPR]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.EXPR)
+                   JackParser.Parser.algebra8
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.EXPR>_R))
+                   JackParser.Parser.algebra4) -}
+aebe50fd67e3b6b901a80c10a2182bb8
+  algebra4 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.EXPR]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.EXPR)
+                   JackParser.Parser.algebra7
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.EXPR>_R))
+                   JackParser.Parser.algebra5) -}
+bbd4837b176dc59f90a35c24317e7c93
+  algebra5 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.EXPR]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.EXPR)
+                   JackParser.Parser.algebra6
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.EXPR>_R))
+                   (GHC.Types.[]
+                      @ (Text.Parsec.Prim.ParsecT
+                           GHC.Base.String
+                           ()
+                           Data.Functor.Identity.Identity
+                           JackParser.AST.EXPR))) -}
+43f8c02ac74310287e3ec115927c957b
+  algebra6 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U><L,C(U)><L,U><L,C(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <JackParser.Lexer.Identifier>_R)
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.Identifier -> cok (JackParser.AST.Var x))
+                   cerr
+                   (\ x :: JackParser.Lexer.Identifier -> eok (JackParser.AST.Var x))
+                   eerr }) -}
+9a7581da22bb430f35bd0add674a66b9
+  algebra7 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U><L,C(U)><L,U><L,C(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds6
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <GHC.Base.String>_R)
+                   @ b1
+                   s1
+                   (\ x :: GHC.Base.String -> cok (JackParser.AST.StrConst x))
+                   cerr
+                   (\ x :: GHC.Base.String -> eok (JackParser.AST.StrConst x))
+                   eerr }) -}
+df6f9f0a810f783bed652edcd1b41ca5
+  algebra8 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,C(U)><L,U><L,C(U)><L,C(U)>,
+     Unfolding: (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.Boolean
+                   JackParser.Lexer.boolean2
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.Boolean ->
+                    cok (JackParser.AST.BoolConst x))
+                   cerr
+                   (\ x :: JackParser.Lexer.Boolean ->
+                    eok (JackParser.AST.BoolConst x))
+                   eerr) -}
+ef6b91bdeabadbe9466f5f68c35e261c
+  algebra9 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.EXPR
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5, Strictness: <L,U><L,C(U)><L,U><L,C(U)><L,U>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b1
+                   s1 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   cok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   cerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eok :: JackParser.AST.EXPR
+                          -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                          -> Text.Parsec.Error.ParseError
+                          -> Data.Functor.Identity.Identity b1
+                   eerr :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Lexer.integer
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <JackParser.Lexer.IntLit>_R)
+                   @ b1
+                   s1
+                   (\ x :: JackParser.Lexer.IntLit -> cok (JackParser.AST.IntConst x))
+                   cerr
+                   (\ x :: JackParser.Lexer.IntLit -> eok (JackParser.AST.IntConst x))
+                   eerr) -}
+0772184b6e02053fc9e5b7d853a9785f
+  bins ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      JackParser.Lexer.BOp
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.algebra15
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.Lexer.BOp>_R)) -}
+daf8e66ea9d5c3504077b7f57f8eaee5
+  call :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.call1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+8e748c13ea9d4e7a15e7f56242791d31
+  call1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.call_m1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <()>_R)
+                   @ b1
+                   eta
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.call2
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.call2
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+95d597c3a73c8f4245ec73d7e51e6c83
+  call2 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <GHC.Base.String>_R)
+                   @ b1
+                   eta
+                   (\ x :: GHC.Base.String
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.call3
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: GHC.Base.String
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.call3
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4 }) -}
+13383f1bb3173b3ed10755dfe14141da
+  call3 ::
+    GHC.Base.String
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U> -}
+26b7ce0f61f818346839c0ed64fc675b
+  call4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "do"#) -}
+d747cf4b36ef73565069a688791b0a74
+  call_m1 ::
+    Text.Parsec.Prim.ParsecT
+      [GHC.Types.Char] () Data.Functor.Identity.Identity ()
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds2 JackParser.Parser.call4 }) -}
+59715bced571eb3c01e0cef9400cb4a7
+  classDef :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.classDef1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+8be9bb5c588bd846e8aea68735fc6880
+  classDef1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.classDef_m1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <()>_R)
+                   @ b1
+                   eta
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.classDef2
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.classDef2
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+137aa7db255afdf9089c5f63e677c70e
+  classDef2 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <GHC.Base.String>_R)
+                   @ b1
+                   eta
+                   (\ x :: GHC.Base.String
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.classDef3
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: GHC.Base.String
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.classDef3
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4 }) -}
+0b7209c8ad760fb9c240dc750a6705d7
+  classDef3 ::
+    GHC.Base.String
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ nm :: GHC.Base.String
+                   @ b
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 JackParser.Parser.classDef4
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <[JackParser.AST.AST]>_R)
+                   @ b
+                   eta
+                   (\ x :: [JackParser.AST.AST]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    eta1
+                      (JackParser.AST.CLASS nm x)
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta2
+                   (\ x :: [JackParser.AST.AST]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    eta3
+                      (JackParser.AST.CLASS nm x)
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta4) -}
+81fd842e903e25536531f86825ad0c58
+  classDef4 ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      [JackParser.AST.AST]
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds18
+                   @ [JackParser.AST.AST]
+                   JackParser.Parser.classDef5
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <[JackParser.AST.AST]>_R)) }) -}
+01639646c5ffa26a94bb2225c0b3aaf5
+  classDef5 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Unfolding: (\ @ b
+                   w1 :: Text.Parsec.Prim.State GHC.Base.String ()
+                   w2 :: [JackParser.AST.AST]
+                         -> Text.Parsec.Prim.State GHC.Base.String ()
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b
+                   w3 :: Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b
+                   w4 :: [JackParser.AST.AST]
+                         -> Text.Parsec.Prim.State GHC.Base.String ()
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b
+                   w5 :: Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Prim.$wa9
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.AST.AST
+                   JackParser.Parser.classDef6
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   @ b
+                   w1
+                   w2
+                   w3
+                   w4) -}
+d255931cf34dcbc6029bdadb24969a43
+  classDef6 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,U><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+3168854d5fa68e181f6697334b347929
+  classDef7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "class"#) -}
+c002a4fad29102e41c706eb1bbff2e18
+  classDef_m1 ::
+    Text.Parsec.Prim.ParsecT
+      [GHC.Types.Char] () Data.Functor.Identity.Identity ()
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds2 JackParser.Parser.classDef7 }) -}
+9499272e1bd227c5422c9133ac18edc1
+  classStatement :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,U><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.classDef6
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+482e391b05c0040d2e939da3268f6808
+  comment :: Text.Parsec.String.Parser ()
+  {- Arity: 5, Strictness: <L,U><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Lexer.cmt1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.Lexer.Comment>_R)) -}
+cf91f6669148000c88740d2e006672b7
+  elseSt :: Text.Parsec.String.Parser [JackParser.AST.AST]
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <[JackParser.AST.AST]>_R)) -}
+4ab7c86705b7430231c48787af341990
+  elseSt1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.elseSt_m3
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <()>_R)
+                   @ b1
+                   eta
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt2
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: [JackParser.AST.AST]
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt2
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: [JackParser.AST.AST]
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+e11e33cd618e087478caaa8a7055fc85
+  elseSt10 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.AST]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.AST)
+                   JackParser.Parser.elseSt11
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   (GHC.Types.[]
+                      @ (Text.Parsec.Prim.ParsecT
+                           GHC.Base.String
+                           ()
+                           Data.Functor.Identity.Identity
+                           JackParser.AST.AST))) -}
+8cc932e47fa66113c861f8b24561c14f
+  elseSt11 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U> -}
+e9750f81ec9dd4bf6520b53eb6c39f88
+  elseSt12 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.elseSt_m1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <()>_R)
+                   @ b1
+                   eta
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt13
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt13
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+198e3f5337bedff0a43237a026dcd133
+  elseSt13 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.elseSt15
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <JackParser.AST.EXPR>_R)
+                   @ b1
+                   eta
+                   (\ x :: JackParser.AST.EXPR
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt14
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: JackParser.AST.EXPR
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt14
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+a87976b23efd30c250de397c0c76d875
+  elseSt14 ::
+    JackParser.AST.EXPR
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U> -}
+0bb3a767b0deb8924d72669a4ab01ed1
+  elseSt15 ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      JackParser.AST.EXPR
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds17 @ JackParser.AST.EXPR JackParser.Parser.expression }) -}
+ae033d212f1c58e84774e989d6e99a9c
+  elseSt16 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "if"#) -}
+f111e0c1590f5827151966f62a160228
+  elseSt17 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.elseSt_m2
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <()>_R)
+                   @ b1
+                   eta
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt18
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt18
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+28f4a24c428609d5df708b2d8f41457e
+  elseSt18 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+815d91ee70a8a244be687aea2d913939
+  elseSt19 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "let"#) -}
+df991b2dede1ea7c6bd0b0e8a8e63606
+  elseSt2 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.elseSt3
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <[JackParser.AST.AST]>_R)
+                   @ b1
+                   eta
+                   (\ x :: [JackParser.AST.AST]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    eta1
+                      x
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta2
+                   (\ x :: [JackParser.AST.AST]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    eta3
+                      x
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta4) -}
+0726453f397f2b834b9f02bfc85c0f49
+  elseSt20 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.Scope
+                   JackParser.Lexer.scope2
+                   @ b1
+                   eta
+                   (\ x :: JackParser.Lexer.Scope
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt21
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: JackParser.Lexer.Scope
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.elseSt21
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+ab22df40283db3f986604f830ea6feed
+  elseSt21 ::
+    JackParser.Lexer.Scope
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+6cf93ece10c663b7301c15843623124b
+  elseSt22 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "else"#) -}
+8c551deffe6b929ed122d48e1daa3af1
+  elseSt3 ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      [JackParser.AST.AST]
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds18
+                   @ [JackParser.AST.AST]
+                   JackParser.Parser.elseSt4
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <[JackParser.AST.AST]>_R)) }) -}
+46894077a470a0bf0f1ee501559573ce
+  elseSt4 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5,
+     Unfolding: (\ @ b
+                   w1 :: Text.Parsec.Prim.State GHC.Base.String ()
+                   w2 :: [JackParser.AST.AST]
+                         -> Text.Parsec.Prim.State GHC.Base.String ()
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b
+                   w3 :: Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b
+                   w4 :: [JackParser.AST.AST]
+                         -> Text.Parsec.Prim.State GHC.Base.String ()
+                         -> Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b
+                   w5 :: Text.Parsec.Error.ParseError
+                         -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Prim.$wa9
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.AST.AST
+                   JackParser.Parser.elseSt5
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   @ b
+                   w1
+                   w2
+                   w3
+                   w4) -}
+83fbcb97b8da600e0d73e16ee5494b97
+  elseSt5 ::
+    Text.Parsec.Prim.State GHC.Base.String ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State GHC.Base.String ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b)
+    -> Data.Functor.Identity.Identity b
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (5, True, False)
+                (\ @ b
+                   eta1 :: Text.Parsec.Prim.State GHC.Base.String ()
+                   eta2 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State GHC.Base.String ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta5 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.AST.AST
+                   JackParser.Parser.elseSt6
+                   @ b
+                   eta1
+                   eta2
+                   eta3
+                   eta4
+                   eta5) -}
+d59f03f779c8c9c59fcbc7f547f6c213
+  elseSt6 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.AST]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.AST)
+                   JackParser.Parser.elseSt20
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   JackParser.Parser.elseSt7) -}
+f707957d80adc9ef9bc67fc835cb5720
+  elseSt7 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.AST]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.AST)
+                   JackParser.Parser.elseSt17
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   JackParser.Parser.elseSt8) -}
+a680a88abf42aceafe06dd21f912cdc6
+  elseSt8 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.AST]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.AST)
+                   JackParser.Parser.call1
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   JackParser.Parser.elseSt9) -}
+ccb12ccf98ce1af0c19594e45118f55b
+  elseSt9 ::
+    [Text.Parsec.Prim.ParsecT
+       GHC.Base.String
+       ()
+       Data.Functor.Identity.Identity
+       JackParser.AST.AST]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (Text.Parsec.Prim.ParsecT
+                        GHC.Base.String
+                        ()
+                        Data.Functor.Identity.Identity
+                        JackParser.AST.AST)
+                   JackParser.Parser.elseSt12
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   JackParser.Parser.elseSt10) -}
+2d18a5027dcdd0aa5ca03d904b8cc31b
+  elseSt_m1 ::
+    Text.Parsec.Prim.ParsecT
+      [GHC.Types.Char] () Data.Functor.Identity.Identity ()
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds2 JackParser.Parser.elseSt16 }) -}
+7b76ae389f8ce85909ed4ed3d85a20f1
+  elseSt_m2 ::
+    Text.Parsec.Prim.ParsecT
+      [GHC.Types.Char] () Data.Functor.Identity.Identity ()
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds2 JackParser.Parser.elseSt19 }) -}
+47cc8dccad774975c30a454083d94fd1
+  elseSt_m3 ::
+    Text.Parsec.Prim.ParsecT
+      [GHC.Types.Char] () Data.Functor.Identity.Identity ()
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds2 JackParser.Parser.elseSt22 }) -}
+85d4cc3e909758c989428b3dc409f96b
+  expression :: Text.Parsec.String.Parser JackParser.AST.EXPR
+  {- Unfolding: (JackParser.Operators.access3
+                   JackParser.Parser.algebra) -}
+cbdf1f5ff1b321414ef5f8789758d5da
+  fBody :: Text.Parsec.String.Parser [JackParser.AST.AST]
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.fBody1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <[JackParser.AST.AST]>_R)) -}
+37fe3c5b4200a8b23e233ae074e5334c
+  fBody1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> ([JackParser.AST.AST]
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Prim.$wa9
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.AST.AST
+                   JackParser.Parser.elseSt5
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <GHC.Base.String>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.AST.AST>_R))
+                   @ b1
+                   eta
+                   (\ x :: [JackParser.AST.AST]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    JackParser.Parser.fBody2
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: [JackParser.AST.AST]
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: [JackParser.AST.AST]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    JackParser.Parser.fBody2
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: [JackParser.AST.AST]
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))) -}
+c7a8b316161d1de240f007384c21aabe
+  fBody2 ::
+    [JackParser.AST.AST]
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> ([JackParser.AST.AST]
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> ([JackParser.AST.AST]
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ sts :: [JackParser.AST.AST]
+                   @ b
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta3 :: [JackParser.AST.AST]
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b ->
+                 JackParser.Parser.fBody3
+                   @ b
+                   eta
+                   (\ x :: JackParser.AST.AST
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    eta1
+                      (GHC.Base.++
+                         @ JackParser.AST.AST
+                         sts
+                         (GHC.Types.:
+                            @ JackParser.AST.AST
+                            x
+                            (GHC.Types.[] @ JackParser.AST.AST)))
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta2
+                   (\ x :: JackParser.AST.AST
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    eta3
+                      (GHC.Base.++
+                         @ JackParser.AST.AST
+                         sts
+                         (GHC.Types.:
+                            @ JackParser.AST.AST
+                            x
+                            (GHC.Types.[] @ JackParser.AST.AST)))
+                      s2
+                      (case s2 of wild { Text.Parsec.Prim.State ds3 ds4 ds5 ->
+                       case ds4 of ww10 { Text.Parsec.Pos.SourcePos ww11 ww12 ww13 ->
+                       case err of ww { Text.Parsec.Error.ParseError ww1 ww2 ->
+                       case ww1 of ww3 { Text.Parsec.Pos.SourcePos ww4 ww5 ww6 ->
+                       case Text.Parsec.Error.$wmergeError
+                              ww4
+                              ww5
+                              ww6
+                              ww2
+                              ww11
+                              ww12
+                              ww13
+                              (GHC.Types.[]
+                                 @ Text.Parsec.Error.Message) of ww14 { (#,#) ww15 ww16 ->
+                       Text.Parsec.Error.ParseError ww15 ww16 } } } } }))
+                   eta4) -}
+e60e068891e2aca5f448e917c8abe007
+  fBody3 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 JackParser.Parser.fBody_m1
+                   `cast`
+                 (Text.Parsec.Prim.NTCo:ParsecT[0]
+                      <[GHC.Types.Char]>_R
+                      <()>_R
+                      <Data.Functor.Identity.Identity>_R
+                      <()>_R)
+                   @ b1
+                   eta
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.fBody4
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: ()
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.fBody4
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+aa0a95a85b6c8a511221b8c0dcff6a93
+  fBody4 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+d9fc98ac84fca362ccd008003b3faab8
+  fBody5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "return"#) -}
+284e3d91974137b8424696ae4051b88c
+  fBody_m1 ::
+    Text.Parsec.Prim.ParsecT
+      [GHC.Types.Char] () Data.Functor.Identity.Identity ()
+  {- Unfolding: (case JackParser.Lexer.lexer
+                        @ () of wild { Text.Parsec.Token.TokenParser ds1 ds2 ds3 ds4 ds5 ds6 ds7 ds8 ds9 ds10 ds11 ds12 ds13 ds14 ds15 ds16 ds17 ds18 ds19 ds20 ds21 ds22 ds23 ds24 ds25 ds26 ds27 ds28 ds29 ->
+                 ds2 JackParser.Parser.fBody5 }) -}
+eea51b4b802126d671d6347d8856a697
+  funDec :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.funDec1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+5a9bc1d53a9f1031d59190b3e1f57aa3
+  funDec1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Combinator.choice3
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ JackParser.Lexer.FunType
+                   JackParser.Lexer.funType2
+                   @ b1
+                   eta
+                   (\ x :: JackParser.Lexer.FunType
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.funDec2
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: JackParser.Lexer.FunType
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                      err :: Text.Parsec.Error.ParseError ->
+                    JackParser.Parser.funDec2
+                      x
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))
+                   eta4) -}
+c67ac2beba6411171bbbe9900abf3e80
+  funDec2 ::
+    JackParser.Lexer.FunType
+    -> forall b.
+       Text.Parsec.Prim.State [GHC.Types.Char] ()
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (JackParser.AST.AST
+           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+           -> Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> (Text.Parsec.Error.ParseError
+           -> Data.Functor.Identity.Identity b)
+       -> Data.Functor.Identity.Identity b
+  {- Arity: 6,
+     Strictness: <L,U><L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)> -}
+0d7615cb6dba78c3254bba27202ff99a
+  ifBlock :: Text.Parsec.String.Parser [JackParser.AST.AST]
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,A>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt4
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <[JackParser.AST.AST]>_R)) -}
+cce07c0fb027cb62ac4781318956f3cc
+  ifSt :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt12
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+a1bd5b11cf45da7237807eb461821d98
+  program :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.program1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+ae372a1b24f31e1d9add052a347e1e60
+  program1 ::
+    Text.Parsec.Prim.State [GHC.Types.Char] ()
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (JackParser.AST.AST
+        -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+        -> Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> (Text.Parsec.Error.ParseError
+        -> Data.Functor.Identity.Identity b1)
+    -> Data.Functor.Identity.Identity b1
+  {- Arity: 5,
+     Strictness: <L,U(U,U(U,U,U),U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: (\ @ b1
+                   eta :: Text.Parsec.Prim.State [GHC.Types.Char] ()
+                   eta1 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta2 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta3 :: JackParser.AST.AST
+                           -> Text.Parsec.Prim.State [GHC.Types.Char] ()
+                           -> Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1
+                   eta4 :: Text.Parsec.Error.ParseError
+                           -> Data.Functor.Identity.Identity b1 ->
+                 Text.Parsec.Prim.$wa9
+                   @ GHC.Base.String
+                   @ ()
+                   @ Data.Functor.Identity.Identity
+                   @ ()
+                   JackParser.Lexer.cmt1
+                     `cast`
+                   (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                             <[GHC.Types.Char]>_R
+                             <()>_R
+                             <Data.Functor.Identity.Identity>_R
+                             <JackParser.Lexer.Comment>_R))
+                   @ b1
+                   eta
+                   (\ x :: [()]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    JackParser.Parser.classDef1
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta1 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta2 (Text.Parsec.Error.mergeError err err')))
+                   eta2
+                   (\ x :: [()]
+                      s2 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                      err :: Text.Parsec.Error.ParseError[OneShot] ->
+                    JackParser.Parser.classDef1
+                      @ b1
+                      s2
+                      eta1
+                      eta2
+                      (\ x1 :: JackParser.AST.AST
+                         s3 :: Text.Parsec.Prim.State [GHC.Types.Char] ()[OneShot]
+                         err' :: Text.Parsec.Error.ParseError[OneShot] ->
+                       eta3 x1 s3 (Text.Parsec.Error.mergeError err err'))
+                      (\ err' :: Text.Parsec.Error.ParseError ->
+                       eta4 (Text.Parsec.Error.mergeError err err')))) -}
+4e95bc5b4cd8de034dca7d06f5890d67
+  returnSt :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.fBody3
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+68f77c060e862d9d5d45e838dd3e6c99
+  statement :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt5
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+fe343472bc9e2b64d24a2fcecfe0e23a
+  symbols ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      JackParser.AST.EXPR
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.algebra1
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.EXPR>_R)) -}
+8c57f33171c942bf718c80bee5d63893
+  uns ::
+    Text.Parsec.Prim.ParsecT
+      GHC.Base.String
+      ()
+      Data.Functor.Identity.Identity
+      JackParser.Lexer.UOp
+  {- Arity: 5, Strictness: <L,U(U,U,U)><L,U><L,U><L,U><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.algebra10
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <GHC.Base.String>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.Lexer.UOp>_R)) -}
+4872f4ba102315d30055ea8010f26677
+  varAssign :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt17
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+966fb529a19d664da994630330763155
+  varDec :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U(U,U,U)><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,C(U)>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt20
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+90a5026fb978fd071bb158f2977eeb89
+  whileSt :: Text.Parsec.String.Parser JackParser.AST.AST
+  {- Arity: 5,
+     Strictness: <L,U><L,C(C1(C1(U)))><L,U><L,C(C1(C1(U)))><L,U>,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.Parser.elseSt11
+                  `cast`
+                (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                          <[GHC.Types.Char]>_R
+                          <()>_R
+                          <Data.Functor.Identity.Identity>_R
+                          <JackParser.AST.AST>_R)) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

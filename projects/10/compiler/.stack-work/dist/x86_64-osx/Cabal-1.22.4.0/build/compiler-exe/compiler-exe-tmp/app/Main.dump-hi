@@ -1,0 +1,227 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-03 17:11:21.717644 UTC
+
+interface main@main:Main 7102
+  interface hash: f25d01f9f700fcc891c2ce4738b9b003
+  ABI hash: 3296f42c4c8cd2990725724ba4899564
+  export-list hash: fc2fb2f906661228d85daa4db56c794d
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 608b6a4827442b04fbb01954d20c6f78
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Main.main
+module dependencies:
+package dependencies: StateVar-1.1.0.1@State_6K4a3UqSdqh6lGAm1wlr9s
+                      adjunctions-4.2.1@adjun_73euuJZUxiC5Yx5EIEXn8g
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ base-4.8.1.0
+                      base-orphans-0.4.4@baseo_E55c3OEBLyu45sND7mOuE9
+                      bifunctors-5@bifun_6cWzSBWZD9ID5wcfOFIydn
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      comonad-4.2.7.2@comon_Iyp8zBsbnTG1MeVOAVEXig
+                      compiler-0.1.0.0@compi_67JlvSkZUoW2a5wLn384Tq
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      contravariant-1.3.2@contr_Ex6x6hL6qVP0xeZutOTf0R
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      distributive-0.4.4@distr_IiTFZxvjHzA0FvKz3AU35Q
+                      exceptions-0.8.0.2@excep_8GsEeHgaIks3pVGk6GaELJ
+                      free-4.12.1@free_AW1LSLZ5gRE6OPcReQnEpn ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy integer-gmp-1.0.0.0
+                      kan-extensions-4.2.2@kanex_8tdsKOG6HCvHMXp3Tkw8cG
+                      lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b
+                      mmorph-1.0.4@mmorp_8dNpUU8QFPe77rrwKAb20b
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0
+                      prelude-extras-0.4@prelu_13F4lGS3Q6l43JZvPq8G4h
+                      pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR
+                      primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk
+                      profunctors-5.1.1@profu_HlacZlwi60PEvhf7633Eh6
+                      reflection-2@refle_7dRZJKJ0RoVKjlNBSuDj1U
+                      semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO
+                      semigroupoids-5.0.0.4@semig_AaxZ8J0J9AJFrgjq1J33Wj
+                      stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr
+                      tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW template-haskell-2.10.0.0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a
+                      vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         reflection-2@refle_7dRZJKJ0RoVKjlNBSuDj1U:Data.Reflection
+         stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr:Control.Monad.STM
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+family instance modules: adjunctions-4.2.1@adjun_73euuJZUxiC5Yx5EIEXn8g:Data.Functor.Rep
+                         base-4.8.1.0:Control.Applicative base-4.8.1.0:Data.Either
+                         base-4.8.1.0:Data.Functor.Identity base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:Data.Void
+                         base-4.8.1.0:GHC.Exts base-4.8.1.0:GHC.Generics
+                         base-4.8.1.0:GHC.TypeLits
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         kan-extensions-4.2.2@kanex_8tdsKOG6HCvHMXp3Tkw8cG:Data.Functor.Yoneda
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.At
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Internal.Indexed
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Internal.Zoom
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Reified
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Tuple
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Wrapped
+                         pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR:Text.PrettyPrint.HughesPJ
+                         primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk:Control.Monad.Primitive
+                         profunctors-5.1.1@profu_HlacZlwi60PEvhf7633Eh6:Data.Profunctor.Rep
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.List.NonEmpty
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.Semigroup
+                         tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashSet
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Storable
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Data.Either bc9482e78cc431fce439b593377aa2e6
+import  -/  base-4.8.1.0:Data.Functor 5c701b0af1708f0192a25dfe14ce6274
+import  -/  base-4.8.1.0:GHC.List f31ed8784b3e05f1397195751f7d74ea
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  base-4.8.1.0:System.Environment 946ddc2d7c48138bb213316abaff2a8d
+import  -/  base-4.8.1.0:System.IO 29a6f3d7c8ad8a4e6200d8bbb6e70aae
+import  -/  compiler-0.1.0.0@compi_67JlvSkZUoW2a5wLn384Tq:JackCodeGenerator.CodeGen bb3a7f450cb6c837a34d706cdddef62f
+import  -/  compiler-0.1.0.0@compi_67JlvSkZUoW2a5wLn384Tq:JackParser.AST 2366cdca13908dd8002738c77b3fc53c
+import  -/  compiler-0.1.0.0@compi_67JlvSkZUoW2a5wLn384Tq:JackParser.Lexer 530b85fe2b24277601c13edea12f76d7
+import  -/  compiler-0.1.0.0@compi_67JlvSkZUoW2a5wLn384Tq:JackParser.Parser ce0e46fc5470f7806bfdb14004c537df
+import  -/  compiler-0.1.0.0@compi_67JlvSkZUoW2a5wLn384Tq:JackParser.SymbolTable 949c7cf96ecc702a89f5729e0a67df65
+import  -/  ghc-prim-0.4.0.0:GHC.Types 6b27fb3fdbd0e3f0925a4496c66513bb
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.Reader 41eb3f27ab627120db9a4602ab0a88c2
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.State.Lazy d96af44e8d2501342f4d849385ed921c
+import  -/  parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0:Text.Parsec.Prim 285cde77b6b24df2175f0525c84910d8
+import  -/  transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.State.Lazy c08c12a521658e8ac939bca69680ffbc
+e0f9872c79a7ebfaf7a8cdbde43a9c4c
+  main :: GHC.Types.IO ()
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: InlineRule (0, True, True)
+                Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R)) -}
+ae40fd89354768443b308194d1b7044a
+  main1 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1, Strictness: <L,U>,
+     Unfolding: (\ s :: GHC.Prim.State# GHC.Prim.RealWorld[OneShot] ->
+                 case System.Environment.getArgs1 s of ds { (#,#) ipv ipv1 ->
+                 case GHC.IO.Handle.FD.openFile1
+                        (GHC.List.head @ GHC.Base.String ipv1)
+                        GHC.IO.IOMode.ReadMode
+                        ipv of ds1 { (#,#) ipv2 ipv3 ->
+                 case GHC.IO.Handle.Text.hGetContents1
+                        ipv3
+                        ipv2 of ds2 { (#,#) ipv4 ipv5 ->
+                 GHC.IO.Handle.Text.hPutStr2
+                   GHC.IO.Handle.FD.stdout
+                   (case (Text.Parsec.Prim.runPT
+                            @ GHC.Base.String
+                            @ ()
+                            @ Data.Functor.Identity.Identity
+                            @ JackParser.AST.AST
+                            @ GHC.Types.Char
+                            (Text.Parsec.String.$s$fStream[]mtok @ GHC.Types.Char)
+                            JackParser.Parser.program1
+                              `cast`
+                            (Sym (Text.Parsec.Prim.NTCo:ParsecT[0]
+                                      <[GHC.Types.Char]>_R
+                                      <()>_R
+                                      <Data.Functor.Identity.Identity>_R
+                                      <JackParser.AST.AST>_R))
+                            GHC.Tuple.()
+                            (GHC.Types.[] @ GHC.Types.Char)
+                            ipv5)
+                           `cast`
+                         (Data.Functor.Identity.NTCo:Identity[0]
+                              <Data.Either.Either
+                                 Text.Parsec.Error.ParseError JackParser.AST.AST>_R) of wild {
+                      Data.Either.Left ipv6
+                      -> case Control.Exception.Base.irrefutPatError
+                                @ JackParser.AST.AST
+                                "app/Main.hs:20:7-43|(Right x)"#
+                         ret_ty GHC.Base.String
+                         of {}
+                      Data.Either.Right x
+                      -> case (JackCodeGenerator.CodeGen.writeStmt x)
+                                `cast`
+                              (Control.Monad.Trans.State.Lazy.NTCo:StateT[0]
+                                   <JackParser.SymbolTable.SymbolTable>_N
+                                   <GHC.Base.Maybe>_R
+                                   <GHC.Base.String>_N)
+                                JackParser.SymbolTable.emptyTable of wild1 {
+                           GHC.Base.Nothing -> GHC.Show.$fShowMaybe3
+                           GHC.Base.Just b1
+                           -> GHC.Base.++
+                                @ GHC.Types.Char
+                                GHC.Show.$fShowMaybe1
+                                (case b1 of ww { (,) ww1 ww2 ->
+                                 GHC.Types.:
+                                   @ GHC.Types.Char
+                                   GHC.Show.shows9
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.shows6
+                                      (GHC.Show.showLitString
+                                         ww1
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.shows6
+                                            (GHC.Types.:
+                                               @ GHC.Types.Char
+                                               GHC.Show.showList__1
+                                               (GHC.List.foldr1_$sfoldr1
+                                                  @ (GHC.Base.String -> GHC.Base.String)
+                                                  GHC.Show.$fShow(,)1
+                                                  (case ww2 of ww4 { JackParser.SymbolTable.SymbolTable ww3 ww5 ww6 ww7 ww8 ->
+                                                   JackParser.SymbolTable.$w$cshowsPrec4
+                                                     0
+                                                     ww3
+                                                     ww5
+                                                     ww6
+                                                     ww7
+                                                     ww8 })
+                                                  (GHC.Types.[] @ GHC.Show.ShowS)
+                                                  Main.main2))))) }) } })
+                   GHC.Types.True
+                   ipv4 } } }) -}
+48e768603f6eb8e1e897c307f250aca3
+  main2 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows8
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ee32afd582f269c8a7c8d04fe448987d
+  main3 ::
+    GHC.Prim.State# GHC.Prim.RealWorld
+    -> (# GHC.Prim.State# GHC.Prim.RealWorld, () #)
+  {- Arity: 1,
+     Unfolding: (GHC.TopHandler.runMainIO1
+                   @ ()
+                   Main.main1 `cast` (Sym (GHC.Types.NTCo:IO[0] <()>_R))) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

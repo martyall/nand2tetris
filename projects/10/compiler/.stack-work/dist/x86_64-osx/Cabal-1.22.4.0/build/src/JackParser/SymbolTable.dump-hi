@@ -1,0 +1,2669 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-03 17:11:18.399535 UTC
+
+interface compi_67JlvSkZUoW2a5wLn384Tq:JackParser.SymbolTable 7102
+  interface hash: 088274c87c70e3130cad7be5f1031922
+  ABI hash: 949c7cf96ecc702a89f5729e0a67df65
+  export-list hash: 71a03821de34726f0ad672db46ef84b0
+  orphan hash: 4b261be09397170d7717d41135325f05
+  flag hash: 637396ae02bde5fcc866c51ef8885c35
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  JackParser.SymbolTable.argLIndex
+  JackParser.SymbolTable.blockBuilder
+  JackParser.SymbolTable.builder
+  JackParser.SymbolTable.c
+  JackParser.SymbolTable.className
+  JackParser.SymbolTable.classV
+  JackParser.SymbolTable.clearLocals
+  JackParser.SymbolTable.emptyTable
+  JackParser.SymbolTable.fieldCIndex
+  JackParser.SymbolTable.functions
+  JackParser.SymbolTable.getF
+  JackParser.SymbolTable.getIf
+  JackParser.SymbolTable.getIndex
+  JackParser.SymbolTable.getV
+  JackParser.SymbolTable.getWhile
+  JackParser.SymbolTable.ifIndex
+  JackParser.SymbolTable.inc
+  JackParser.SymbolTable.incIf
+  JackParser.SymbolTable.incWhile
+  JackParser.SymbolTable.l
+  JackParser.SymbolTable.lclLIndex
+  JackParser.SymbolTable.localV
+  JackParser.SymbolTable.name
+  JackParser.SymbolTable.putF
+  JackParser.SymbolTable.putName
+  JackParser.SymbolTable.putV
+  JackParser.SymbolTable.staticCIndex
+  JackParser.SymbolTable.whileIndex
+  JackParser.SymbolTable.ClassVars{JackParser.SymbolTable.ClassVars JackParser.SymbolTable._classV JackParser.SymbolTable._fieldCIndex JackParser.SymbolTable._functions JackParser.SymbolTable._staticCIndex}
+  JackParser.SymbolTable.Fun{JackParser.SymbolTable.Fun JackParser.SymbolTable.args JackParser.SymbolTable.funType JackParser.SymbolTable.retType}
+  JackParser.SymbolTable.ID
+  JackParser.SymbolTable.LocalVars{JackParser.SymbolTable.LocalVars JackParser.SymbolTable._argLIndex JackParser.SymbolTable._lclLIndex JackParser.SymbolTable._localV}
+  JackParser.SymbolTable.SymbolTable{JackParser.SymbolTable.SymbolTable JackParser.SymbolTable._c JackParser.SymbolTable._className JackParser.SymbolTable._ifIndex JackParser.SymbolTable._l JackParser.SymbolTable._whileIndex}
+  JackParser.SymbolTable.Var{JackParser.SymbolTable.Var JackParser.SymbolTable.varIndex JackParser.SymbolTable.varScope}
+module dependencies: JackParser.AST JackParser.Lexer
+package dependencies: StateVar-1.1.0.1@State_6K4a3UqSdqh6lGAm1wlr9s
+                      adjunctions-4.2.1@adjun_73euuJZUxiC5Yx5EIEXn8g
+                      array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ base-4.8.1.0
+                      base-orphans-0.4.4@baseo_E55c3OEBLyu45sND7mOuE9
+                      bifunctors-5@bifun_6cWzSBWZD9ID5wcfOFIydn
+                      binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      comonad-4.2.7.2@comon_Iyp8zBsbnTG1MeVOAVEXig
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      contravariant-1.3.2@contr_Ex6x6hL6qVP0xeZutOTf0R
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o
+                      distributive-0.4.4@distr_IiTFZxvjHzA0FvKz3AU35Q
+                      exceptions-0.8.0.2@excep_8GsEeHgaIks3pVGk6GaELJ
+                      free-4.12.1@free_AW1LSLZ5gRE6OPcReQnEpn ghc-prim-0.4.0.0
+                      hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy integer-gmp-1.0.0.0
+                      kan-extensions-4.2.2@kanex_8tdsKOG6HCvHMXp3Tkw8cG
+                      lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b
+                      mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0
+                      prelude-extras-0.4@prelu_13F4lGS3Q6l43JZvPq8G4h
+                      pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR
+                      primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk
+                      profunctors-5.1.1@profu_HlacZlwi60PEvhf7633Eh6
+                      reflection-2@refle_7dRZJKJ0RoVKjlNBSuDj1U
+                      semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO
+                      semigroupoids-5.0.0.4@semig_AaxZ8J0J9AJFrgjq1J33Wj
+                      stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr
+                      tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW template-haskell-2.10.0.0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+                      unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a
+                      vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         hashable-1.2.3.3@hasha_2GTZqecVp8NJZrNuKzGxfy:Data.Hashable.Generic
+         reflection-2@refle_7dRZJKJ0RoVKjlNBSuDj1U:Data.Reflection
+         stm-2.4.4@stm_C1kFMnPqFjvDhFjgMZGUpr:Control.Monad.STM
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Fusion.Stream
+         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+family instance modules: adjunctions-4.2.1@adjun_73euuJZUxiC5Yx5EIEXn8g:Data.Functor.Rep
+                         base-4.8.1.0:Control.Applicative base-4.8.1.0:Data.Either
+                         base-4.8.1.0:Data.Functor.Identity base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:Data.Void
+                         base-4.8.1.0:GHC.Exts base-4.8.1.0:GHC.Generics
+                         base-4.8.1.0:GHC.TypeLits
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         kan-extensions-4.2.2@kanex_8tdsKOG6HCvHMXp3Tkw8cG:Data.Functor.Yoneda
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.At
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Internal.Indexed
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Internal.Zoom
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Reified
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Tuple
+                         lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Wrapped
+                         pretty-1.1.2.0@prett_7UQTOB05U7lIYPkFOVraeR:Text.PrettyPrint.HughesPJ
+                         primitive-0.6@primi_3d4UsQu7pJCEtlsxN3gLjk:Control.Monad.Primitive
+                         profunctors-5.1.1@profu_HlacZlwi60PEvhf7633Eh6:Data.Profunctor.Rep
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.List.NonEmpty
+                         semigroups-0.16.2.2@semig_509rjK42Yeb8JAwFst5KmO:Data.Semigroup
+                         tagged-0.8.1@tagge_6Tf46oJAk552xT73wGffBW:Data.Tagged
+                         template-haskell-2.10.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashMap.Base
+                         unordered-containers-0.2.5.1@unord_7E41cj9RvqSJeZ4jSnbs1a:Data.HashSet
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Primitive
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Storable
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed
+                         vector-0.10.12.3@vecto_1COyUuV1LrA1IjYnWfJnbs:Data.Vector.Unboxed.Base
+import  -/  base-4.8.1.0:Data.Foldable 2e5acb797cfda6b3b7fabd7052abe290
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Enum d0db4d619cd8916cc7a23444816222af
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  JackParser.AST 2366cdca13908dd8002738c77b3fc53c
+  exports: 443fbfc8e8cebc6a0a67c7a24eef3eac
+  AST e014f9bbc1e4585e529e27f0cc7332b5
+  BRANCH 40c97e369126159c4ca28a1002ef7df8
+  CLASS b955a73fa866f6ede5ba5b9cf93e32ff
+  DO 8b4e3c3d76ae9a222aae97a6180435ad
+  EXPR 0d4405807dfea8220afbca1a694104d2
+  FUN 008e22052769d307efb84bb2dbec3af4
+  LET efd2ab14326a36e775bc6d8639a52dc9
+  RET bbfbc858744b588e572a68b197ec9784
+  VAR 4931e28f3a6cbf085922a1bfa1b1ab72
+  WHILE b567ffca8d0e82a606bf7520ff525ff9
+import  -/  JackParser.Lexer 530b85fe2b24277601c13edea12f76d7
+  exports: ceb265d750e2ba0bb23743e627e31c17
+  Argument d558ef85eaaa825f6c1b8e58eb63d681
+  Field 2f1f605042ee2a9a602ba993d6ff1c1f
+  FunType fb7036306be5bcfd6aee8801cbc91af6
+  Identifier e84140e2b16d3f29743eb3d453988348
+  Local 58819cb5a09f67f985e46cbd71a815f1
+  Scope f640582c3ce4c1fa29e06a362c221588
+  Static 8f27ed1ecce0dc468c1455112816f413
+  VarType 81d0080ec5d744223f7c92c94d651d26
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map 5e4cbf1ca2e6c8cfaecf2b4e95371357
+import  -/  containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base 7ea108dc1481cad0b32efe810e49ad43
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+import  -/  lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens bb9694a803a7562d3eeaa62a195b491d
+import  -/  lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Getter d7bd016dcfc483cf3d69d5ba481b9585
+import  -/  lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Setter dfc7f40188b3b3d313a2917247c8e787
+import  -/  lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.TH 3f9bdc69172b5f54fed5f3563734d8e7
+import  -/  lens-4.12.3@lens_LtxIaimM6cgBv2t34lsX4b:Control.Lens.Type 2079a8ca2b4bc95b3518ce2434ce193a
+import  -/  mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU:Control.Monad.State.Lazy d96af44e8d2501342f4d849385ed921c
+6a34629debf07cc496bdf2bd4d434981
+  $fEqClassVars :: GHC.Classes.Eq JackParser.SymbolTable.ClassVars
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.ClassVars
+                  JackParser.SymbolTable.$fEqClassVars_$c==
+                  JackParser.SymbolTable.$fEqClassVars_$c/= -}
+8f06021745d0c05a1c93c11a66c61c5d
+  $fEqClassVars1 ::
+    Data.Map.Base.Map [GHC.Types.Char] JackParser.SymbolTable.Fun
+    -> Data.Map.Base.Map [GHC.Types.Char] JackParser.SymbolTable.Fun
+    -> GHC.Types.Bool
+  {- Unfolding: (Data.Map.Base.$fEqMap_$c==
+                   @ [GHC.Types.Char]
+                   @ JackParser.SymbolTable.Fun
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   JackParser.SymbolTable.$fEqFun) -}
+afbfb489e997f037fc6e7f17caaf6710
+  $fEqClassVars2 ::
+    Data.Map.Base.Map [GHC.Types.Char] JackParser.SymbolTable.Var
+    -> Data.Map.Base.Map [GHC.Types.Char] JackParser.SymbolTable.Var
+    -> GHC.Types.Bool
+  {- Unfolding: (Data.Map.Base.$fEqMap_$c==
+                   @ [GHC.Types.Char]
+                   @ JackParser.SymbolTable.Var
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   JackParser.SymbolTable.$fEqVar) -}
+6a34629debf07cc496bdf2bd4d434981
+  $fEqClassVars_$c/= ::
+    JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.ClassVars -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S,1*U(U,U,1*U(U),1*U(U))><S,1*U(U,U,1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a1 :: JackParser.SymbolTable.ClassVars
+                   b :: JackParser.SymbolTable.ClassVars ->
+                 case JackParser.SymbolTable.$fEqClassVars_$c== a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+6a34629debf07cc496bdf2bd4d434981
+  $fEqClassVars_$c== ::
+    JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.ClassVars -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S,1*U(U,U,1*U(U),1*U(U))><S,1*U(U,U,1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.ClassVars
+                   w1 :: JackParser.SymbolTable.ClassVars ->
+                 case w of ww { JackParser.SymbolTable.ClassVars ww1 ww2 ww3 ww4 ->
+                 case w1 of ww5 { JackParser.SymbolTable.ClassVars ww6 ww7 ww8 ww9 ->
+                 JackParser.SymbolTable.$w$c==
+                   ww1
+                   ww2
+                   ww3
+                   ww4
+                   ww6
+                   ww7
+                   ww8
+                   ww9 } }) -}
+20f836858cefb41e8a434aee3103e862
+  $fEqFun :: GHC.Classes.Eq JackParser.SymbolTable.Fun
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.Fun
+                  JackParser.SymbolTable.$fEqFun_$c==
+                  JackParser.SymbolTable.$fEqFun_$c/= -}
+0f1e7cc7b58e53f8d6abc2b3480db3c8
+  $fEqFun1 ::
+    Data.Map.Base.Map [GHC.Types.Char] [GHC.Types.Char]
+    -> Data.Map.Base.Map [GHC.Types.Char] [GHC.Types.Char]
+    -> GHC.Types.Bool
+  {- Unfolding: (Data.Map.Base.$fEqMap_$c==
+                   @ [GHC.Types.Char]
+                   @ [GHC.Types.Char]
+                   GHC.Classes.$fEq[]_$s$fEq[]1
+                   GHC.Classes.$fEq[]_$s$fEq[]1) -}
+20f836858cefb41e8a434aee3103e862
+  $fEqFun_$c/= ::
+    JackParser.SymbolTable.Fun
+    -> JackParser.SymbolTable.Fun -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SLL),1*U(1*U,1*U,U)><S(SLL),1*U(1*U,1*U,U)>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a1 :: JackParser.SymbolTable.Fun
+                   b :: JackParser.SymbolTable.Fun ->
+                 case JackParser.SymbolTable.$fEqFun_$c== a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+20f836858cefb41e8a434aee3103e862
+  $fEqFun_$c== ::
+    JackParser.SymbolTable.Fun
+    -> JackParser.SymbolTable.Fun -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SLL),1*U(1*U,1*U,U)><S(SLL),1*U(1*U,1*U,U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.Fun
+                   w1 :: JackParser.SymbolTable.Fun ->
+                 case w of ww { JackParser.SymbolTable.Fun ww1 ww2 ww3 ->
+                 case w1 of ww4 { JackParser.SymbolTable.Fun ww5 ww6 ww7 ->
+                 JackParser.SymbolTable.$w$c==1 ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+b1e032173030b5ec3015edccf0b221cd
+  $fEqLocalVars :: GHC.Classes.Eq JackParser.SymbolTable.LocalVars
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.LocalVars
+                  JackParser.SymbolTable.$fEqLocalVars_$c==
+                  JackParser.SymbolTable.$fEqLocalVars_$c/= -}
+b1e032173030b5ec3015edccf0b221cd
+  $fEqLocalVars_$c/= ::
+    JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.LocalVars -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S,1*U(U,1*U(U),1*U(U))><S,1*U(U,1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a1 :: JackParser.SymbolTable.LocalVars
+                   b :: JackParser.SymbolTable.LocalVars ->
+                 case JackParser.SymbolTable.$fEqLocalVars_$c== a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+b1e032173030b5ec3015edccf0b221cd
+  $fEqLocalVars_$c== ::
+    JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.LocalVars -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S,1*U(U,1*U(U),1*U(U))><S,1*U(U,1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.LocalVars
+                   w1 :: JackParser.SymbolTable.LocalVars ->
+                 case w of ww { JackParser.SymbolTable.LocalVars ww1 ww2 ww3 ->
+                 case w1 of ww4 { JackParser.SymbolTable.LocalVars ww5 ww6 ww7 ->
+                 JackParser.SymbolTable.$w$c==3 ww1 ww2 ww3 ww5 ww6 ww7 } }) -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fEqSymbolTable ::
+    GHC.Classes.Eq JackParser.SymbolTable.SymbolTable
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.SymbolTable
+                  JackParser.SymbolTable.$fEqSymbolTable_$c==
+                  JackParser.SymbolTable.$fEqSymbolTable_$c/= -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fEqSymbolTable_$c/= ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SLLLL),1*U(1*U(U,U,1*U(U),1*U(U)),1*U(U,1*U(U),1*U(U)),1*U,1*U(U),1*U(U))><S(SLLLL),1*U(1*U(U,U,1*U(U),1*U(U)),1*U(U,1*U(U),1*U(U)),1*U,1*U(U),1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a1 :: JackParser.SymbolTable.SymbolTable
+                   b :: JackParser.SymbolTable.SymbolTable ->
+                 case JackParser.SymbolTable.$fEqSymbolTable_$c== a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fEqSymbolTable_$c== ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable -> GHC.Types.Bool
+  {- Arity: 2,
+     Strictness: <S(SLLLL),1*U(1*U(U,U,1*U(U),1*U(U)),1*U(U,1*U(U),1*U(U)),1*U,1*U(U),1*U(U))><S(SLLLL),1*U(1*U(U,U,1*U(U),1*U(U)),1*U(U,1*U(U),1*U(U)),1*U,1*U(U),1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.SymbolTable
+                   w1 :: JackParser.SymbolTable.SymbolTable ->
+                 case w of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 case ww1 of ww6 { JackParser.SymbolTable.ClassVars ww7 ww8 ww9 ww10 ->
+                 case w1 of ww11 { JackParser.SymbolTable.SymbolTable ww12 ww13 ww14 ww15 ww16 ->
+                 case ww12 of ww17 { JackParser.SymbolTable.ClassVars ww18 ww19 ww20 ww21 ->
+                 JackParser.SymbolTable.$w$c==4
+                   ww7
+                   ww8
+                   ww9
+                   ww10
+                   ww2
+                   ww3
+                   ww4
+                   ww5
+                   ww18
+                   ww19
+                   ww20
+                   ww21
+                   ww13
+                   ww14
+                   ww15
+                   ww16 } } } }) -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fEqVar :: GHC.Classes.Eq JackParser.SymbolTable.Var
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.Var
+                  JackParser.SymbolTable.$fEqVar_$c==
+                  JackParser.SymbolTable.$fEqVar_$c/= -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fEqVar_$c/= ::
+    JackParser.SymbolTable.Var
+    -> JackParser.SymbolTable.Var -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U(U))><S(SL),1*U(1*U,1*U(U))>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a1 :: JackParser.SymbolTable.Var
+                   b :: JackParser.SymbolTable.Var ->
+                 case JackParser.SymbolTable.$fEqVar_$c== a1 b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fEqVar_$c== ::
+    JackParser.SymbolTable.Var
+    -> JackParser.SymbolTable.Var -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S(SL),1*U(1*U,1*U(U))><S(SL),1*U(1*U,1*U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.Var
+                   w1 :: JackParser.SymbolTable.Var ->
+                 case w of ww { JackParser.SymbolTable.Var ww1 ww2 ->
+                 case w1 of ww3 { JackParser.SymbolTable.Var ww4 ww5 ->
+                 JackParser.SymbolTable.$w$c==2 ww1 ww2 ww4 ww5 } }) -}
+6a34629debf07cc496bdf2bd4d434981
+  $fShowClassVars :: GHC.Show.Show JackParser.SymbolTable.ClassVars
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.ClassVars
+                  JackParser.SymbolTable.$fShowClassVars_$cshowsPrec
+                  JackParser.SymbolTable.$fShowClassVars_$cshow
+                  JackParser.SymbolTable.$fShowClassVars_$cshowList -}
+6a34629debf07cc496bdf2bd4d434981
+  $fShowClassVars1 ::
+    JackParser.SymbolTable.ClassVars -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: JackParser.SymbolTable.ClassVars ->
+                 case w of ww { JackParser.SymbolTable.ClassVars ww1 ww2 ww3 ww4 ->
+                 JackParser.SymbolTable.$w$cshowsPrec 0 ww1 ww2 ww3 ww4 }) -}
+353753f389bc3101d2016b08e495061b
+  $fShowClassVars2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "ClassVars {"#) -}
+afde7a9dead51018aa7b38fae93cea3c
+  $fShowClassVars3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "}"#) -}
+15a81dba44dd0cdbd250540a40256e10
+  $fShowClassVars4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_fieldCIndex = "#) -}
+fc916f8db76dcb454474d0723929152b
+  $fShowClassVars5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_staticCIndex = "#) -}
+8055964f07d8413cdda8d57e8d99e6cd
+  $fShowClassVars6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_functions = "#) -}
+aabae4a061c6b1d39512b3c21e27234d
+  $fShowClassVars7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# ", "#) -}
+7945095c3e37321b430b1737d108c959
+  $fShowClassVars8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_classV = "#) -}
+6a34629debf07cc496bdf2bd4d434981
+  $fShowClassVars_$cshow ::
+    JackParser.SymbolTable.ClassVars -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U,U(U),U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.SymbolTable.ClassVars ->
+                 JackParser.SymbolTable.$fShowClassVars_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+6a34629debf07cc496bdf2bd4d434981
+  $fShowClassVars_$cshowList ::
+    [JackParser.SymbolTable.ClassVars] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ JackParser.SymbolTable.ClassVars
+                   JackParser.SymbolTable.$fShowClassVars1) -}
+6a34629debf07cc496bdf2bd4d434981
+  $fShowClassVars_$cshowsPrec ::
+    GHC.Types.Int -> JackParser.SymbolTable.ClassVars -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U,1*U,U(U),U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: JackParser.SymbolTable.ClassVars ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { JackParser.SymbolTable.ClassVars ww3 ww4 ww5 ww6 ->
+                 JackParser.SymbolTable.$w$cshowsPrec ww1 ww3 ww4 ww5 ww6 } }) -}
+20f836858cefb41e8a434aee3103e862
+  $fShowFun :: GHC.Show.Show JackParser.SymbolTable.Fun
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.Fun
+                  JackParser.SymbolTable.$fShowFun_$cshowsPrec
+                  JackParser.SymbolTable.$fShowFun_$cshow
+                  JackParser.SymbolTable.$fShowFun_$cshowList -}
+20f836858cefb41e8a434aee3103e862
+  $fShowFun1 :: JackParser.SymbolTable.Fun -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: JackParser.SymbolTable.Fun ->
+                 case w of ww { JackParser.SymbolTable.Fun ww1 ww2 ww3 ->
+                 JackParser.SymbolTable.$w$cshowsPrec1 0 ww1 ww2 ww3 }) -}
+0ba80a3755f5d074d683135cc01a693e
+  $fShowFun2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "args = "#) -}
+b3a08c036f42cee99d1cc7b67e0961f9
+  $fShowFun3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "retType = "#) -}
+81bb2fcdf355c51702df4db4a136be0a
+  $fShowFun4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "funType = "#) -}
+7981d8a86ae4ba69d8a35dc865bb9fba
+  $fShowFun5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Fun {"#) -}
+20f836858cefb41e8a434aee3103e862
+  $fShowFun_$cshow :: JackParser.SymbolTable.Fun -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(U,U,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.SymbolTable.Fun ->
+                 JackParser.SymbolTable.$fShowFun_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+20f836858cefb41e8a434aee3103e862
+  $fShowFun_$cshowList ::
+    [JackParser.SymbolTable.Fun] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ JackParser.SymbolTable.Fun
+                   JackParser.SymbolTable.$fShowFun1) -}
+20f836858cefb41e8a434aee3103e862
+  $fShowFun_$cshowsPrec ::
+    GHC.Types.Int -> JackParser.SymbolTable.Fun -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(U,U,1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: JackParser.SymbolTable.Fun ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { JackParser.SymbolTable.Fun ww3 ww4 ww5 ->
+                 JackParser.SymbolTable.$w$cshowsPrec1 ww1 ww3 ww4 ww5 } }) -}
+b1e032173030b5ec3015edccf0b221cd
+  $fShowLocalVars :: GHC.Show.Show JackParser.SymbolTable.LocalVars
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.LocalVars
+                  JackParser.SymbolTable.$fShowLocalVars_$cshowsPrec
+                  JackParser.SymbolTable.$fShowLocalVars_$cshow
+                  JackParser.SymbolTable.$fShowLocalVars_$cshowList -}
+b1e032173030b5ec3015edccf0b221cd
+  $fShowLocalVars1 ::
+    JackParser.SymbolTable.LocalVars -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: JackParser.SymbolTable.LocalVars ->
+                 case w of ww { JackParser.SymbolTable.LocalVars ww1 ww2 ww3 ->
+                 JackParser.SymbolTable.$w$cshowsPrec3 0 ww1 ww2 ww3 }) -}
+cf1feb43833e73777e7cd1c2b655b950
+  $fShowLocalVars2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_argLIndex = "#) -}
+9fe2347117a14114a0d194569b588485
+  $fShowLocalVars3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_lclLIndex = "#) -}
+d7f8aaf3f8cdd035557f8ea946418625
+  $fShowLocalVars4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_localV = "#) -}
+e8789e239230d71156510ff8d6aa6996
+  $fShowLocalVars5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "LocalVars {"#) -}
+b1e032173030b5ec3015edccf0b221cd
+  $fShowLocalVars_$cshow ::
+    JackParser.SymbolTable.LocalVars -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,U(U),U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.SymbolTable.LocalVars ->
+                 JackParser.SymbolTable.$fShowLocalVars_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+b1e032173030b5ec3015edccf0b221cd
+  $fShowLocalVars_$cshowList ::
+    [JackParser.SymbolTable.LocalVars] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ JackParser.SymbolTable.LocalVars
+                   JackParser.SymbolTable.$fShowLocalVars1) -}
+b1e032173030b5ec3015edccf0b221cd
+  $fShowLocalVars_$cshowsPrec ::
+    GHC.Types.Int -> JackParser.SymbolTable.LocalVars -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U(1*U,U(U),U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: JackParser.SymbolTable.LocalVars ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { JackParser.SymbolTable.LocalVars ww3 ww4 ww5 ->
+                 JackParser.SymbolTable.$w$cshowsPrec3 ww1 ww3 ww4 ww5 } }) -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fShowSymbolTable ::
+    GHC.Show.Show JackParser.SymbolTable.SymbolTable
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.SymbolTable
+                  JackParser.SymbolTable.$fShowSymbolTable_$cshowsPrec
+                  JackParser.SymbolTable.$fShowSymbolTable_$cshow
+                  JackParser.SymbolTable.$fShowSymbolTable_$cshowList -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fShowSymbolTable1 ::
+    JackParser.SymbolTable.SymbolTable -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: JackParser.SymbolTable.SymbolTable ->
+                 case w of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 JackParser.SymbolTable.$w$cshowsPrec4 0 ww1 ww2 ww3 ww4 ww5 }) -}
+6dc6a5fd90014f73b3f582244c665af0
+  $fShowSymbolTable2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_ifIndex = "#) -}
+28404a79ed5cef19e76aa32509ce0d3b
+  $fShowSymbolTable3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_whileIndex = "#) -}
+a8dd9f57d69933a666c18d96bb413000
+  $fShowSymbolTable4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_className = "#) -}
+c83b39e2c635086243921a3e1b929079
+  $fShowSymbolTable5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_l = "#) -}
+3bd4061300f5344c3d54aba97652c972
+  $fShowSymbolTable6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "_c = "#) -}
+f07426ed915f955688e622101f4ae0a4
+  $fShowSymbolTable7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "SymbolTable {"#) -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fShowSymbolTable_$cshow ::
+    JackParser.SymbolTable.SymbolTable -> GHC.Base.String
+  {- Arity: 1,
+     Strictness: <S,1*U(1*U(1*U,1*U,U(U),U(U)),1*U(1*U,U(U),U(U)),U,U(U),U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.SymbolTable.SymbolTable ->
+                 JackParser.SymbolTable.$fShowSymbolTable_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fShowSymbolTable_$cshowList ::
+    [JackParser.SymbolTable.SymbolTable] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ JackParser.SymbolTable.SymbolTable
+                   JackParser.SymbolTable.$fShowSymbolTable1) -}
+0066868d9ca26c17ffd15ccd114e1ce2
+  $fShowSymbolTable_$cshowsPrec ::
+    GHC.Types.Int
+    -> JackParser.SymbolTable.SymbolTable -> GHC.Show.ShowS
+  {- Arity: 2,
+     Strictness: <S,1*U(U)><S,1*U(1*U(1*U,1*U,U(U),U(U)),1*U(1*U,U(U),U(U)),U,U(U),U(U))>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: JackParser.SymbolTable.SymbolTable ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { JackParser.SymbolTable.SymbolTable ww3 ww4 ww5 ww6 ww7 ->
+                 JackParser.SymbolTable.$w$cshowsPrec4
+                   ww1
+                   ww3
+                   ww4
+                   ww5
+                   ww6
+                   ww7 } }) -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fShowVar :: GHC.Show.Show JackParser.SymbolTable.Var
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.SymbolTable.Var
+                  JackParser.SymbolTable.$fShowVar_$cshowsPrec
+                  JackParser.SymbolTable.$fShowVar_$cshow
+                  JackParser.SymbolTable.$fShowVar_$cshowList -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fShowVar1 :: JackParser.SymbolTable.Var -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (\ w :: JackParser.SymbolTable.Var
+                   w1 :: GHC.Base.String ->
+                 case w of ww { JackParser.SymbolTable.Var ww1 ww2 ->
+                 JackParser.SymbolTable.$w$cshowsPrec2 0 ww1 ww2 w1 }) -}
+f5812aa7518cf626acaa98c598024256
+  $fShowVar2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Var {"#) -}
+d5a8f3bdf1c171a78d4418475b41b8eb
+  $fShowVar3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "varIndex = "#) -}
+f68e4a3880e12155dcde15be1eeb0e64
+  $fShowVar4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "varScope = "#) -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fShowVar_$cshow :: JackParser.SymbolTable.Var -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U(1*U,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.SymbolTable.Var ->
+                 JackParser.SymbolTable.$fShowVar_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fShowVar_$cshowList ::
+    [JackParser.SymbolTable.Var] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ JackParser.SymbolTable.Var
+                   JackParser.SymbolTable.$fShowVar1) -}
+ea6f6b9c578a7dc7e585764c053a89b9
+  $fShowVar_$cshowsPrec ::
+    GHC.Types.Int -> JackParser.SymbolTable.Var -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <S,1*U(U)><S,1*U(1*U,1*U(U))><L,U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: GHC.Types.Int
+                   w1 :: JackParser.SymbolTable.Var
+                   w2 :: GHC.Base.String ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { JackParser.SymbolTable.Var ww3 ww4 ->
+                 JackParser.SymbolTable.$w$cshowsPrec2 ww1 ww3 ww4 w2 } }) -}
+e2e14596bbdb2c5d58fa19d1dc333c49
+  $sfromList ::
+    [(JackParser.Lexer.Identifier, a)]
+    -> Data.Map.Base.Map JackParser.Lexer.Identifier a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a1 ds :: [(JackParser.Lexer.Identifier, a1)] ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { DEFAULT ->
+                           Data.Map.Base.Bin
+                             @ JackParser.Lexer.Identifier
+                             @ a1
+                             1
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1)
+                             (Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case GHC.Classes.$fOrd[]_$s$ccompare1 kx ky of wild4 {
+                             DEFAULT
+                             -> case kx of dt { DEFAULT ->
+                                JackParser.SymbolTable.$sfromList1
+                                  @ a1
+                                  (Data.Map.Base.Bin
+                                     @ JackParser.Lexer.Identifier
+                                     @ a1
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1)
+                                     (Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1))
+                                  wild2 }
+                             GHC.Types.LT
+                             -> case kx of dt { DEFAULT ->
+                                JackParser.SymbolTable.$wpoly_go10
+                                  @ a1
+                                  1
+                                  (Data.Map.Base.Bin
+                                     @ JackParser.Lexer.Identifier
+                                     @ a1
+                                     1
+                                     dt
+                                     x
+                                     (Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1)
+                                     (Data.Map.Base.Tip @ JackParser.Lexer.Identifier @ a1))
+                                  wild2 } } } } } }) -}
+f23a49be48198d28b05b3220c0b7b9f9
+  $sfromList1 ::
+    Data.Map.Base.Map JackParser.Lexer.Identifier a1
+    -> [(JackParser.Lexer.Identifier, a1)]
+    -> Data.Map.Base.Map JackParser.Lexer.Identifier a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+53bc980313dd576baaaf0867b4c02bda
+  $sinsert_$sgo10 ::
+    JackParser.Lexer.Identifier
+    -> a1
+    -> Data.Map.Base.Map JackParser.Lexer.Identifier a1
+    -> Data.Map.Base.Map JackParser.Lexer.Identifier a1
+  {- Arity: 3, Strictness: <S,1*U><L,U><S,1*U> -}
+7c482ba27f758aac0dd72aa69c6beffa
+  $slookup1 ::
+    [GHC.Types.Char]
+    -> Data.Map.Base.Map [GHC.Types.Char] a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+07ea795726cc3f82723428b6224c36be
+  $w$c== ::
+    Data.Map.Base.Map
+      JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 8,
+     Strictness: <L,U><L,U><L,1*U(U)><L,1*U(U)><L,U><L,U><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww1 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Types.Int
+                   ww4 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww5 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                   ww6 :: GHC.Types.Int
+                   ww7 :: GHC.Types.Int ->
+                 case JackParser.SymbolTable.$fEqClassVars2 ww ww4 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case JackParser.SymbolTable.$fEqClassVars1 ww1 ww5 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case ww2 of wild2 { GHC.Types.I# x ->
+                           case ww6 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> GHC.Classes.eqInt ww3 ww7 } } } } }) -}
+b0058f179cad13105cb7613950c88c05
+  $w$c==1 ::
+    JackParser.Lexer.FunType
+    -> JackParser.Lexer.Identifier
+    -> Data.Map.Base.Map
+         JackParser.Lexer.Identifier JackParser.Lexer.VarType
+    -> JackParser.Lexer.FunType
+    -> JackParser.Lexer.Identifier
+    -> Data.Map.Base.Map
+         JackParser.Lexer.Identifier JackParser.Lexer.VarType
+    -> GHC.Types.Bool
+  {- Arity: 6, Strictness: <S,1*U><L,1*U><L,U><S,1*U><L,1*U><L,U>,
+     Inline: [0],
+     Unfolding: (\ ww :: JackParser.Lexer.FunType
+                   ww1 :: JackParser.Lexer.Identifier
+                   ww2 :: Data.Map.Base.Map
+                            JackParser.Lexer.Identifier JackParser.Lexer.VarType
+                   ww3 :: JackParser.Lexer.FunType
+                   ww4 :: JackParser.Lexer.Identifier
+                   ww5 :: Data.Map.Base.Map
+                            JackParser.Lexer.Identifier JackParser.Lexer.VarType ->
+                 case ww of wild {
+                   JackParser.Lexer.Function
+                   -> case ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Function
+                        -> case GHC.Base.eqString ww1 ww4 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> JackParser.SymbolTable.$fEqFun1 ww2 ww5 } }
+                   JackParser.Lexer.Method
+                   -> case ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Method
+                        -> case GHC.Base.eqString ww1 ww4 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> JackParser.SymbolTable.$fEqFun1 ww2 ww5 } }
+                   JackParser.Lexer.Constructor
+                   -> case ww3 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Constructor
+                        -> case GHC.Base.eqString ww1 ww4 of wild2 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True -> JackParser.SymbolTable.$fEqFun1 ww2 ww5 } } }) -}
+b3f53028984ac2c296834f7d9fdbd018
+  $w$c==2 ::
+    JackParser.Lexer.Scope
+    -> GHC.Types.Int
+    -> JackParser.Lexer.Scope
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(U)><S,1*U><L,1*U(U)>, Inline: [0],
+     Unfolding: (\ ww :: JackParser.Lexer.Scope
+                   ww1 :: GHC.Types.Int
+                   ww2 :: JackParser.Lexer.Scope
+                   ww3 :: GHC.Types.Int ->
+                 case ww of wild {
+                   JackParser.Lexer.Field
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Field -> GHC.Classes.eqInt ww1 ww3 }
+                   JackParser.Lexer.Static
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Static -> GHC.Classes.eqInt ww1 ww3 }
+                   JackParser.Lexer.Local
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Local -> GHC.Classes.eqInt ww1 ww3 }
+                   JackParser.Lexer.Argument
+                   -> case ww2 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        JackParser.Lexer.Argument -> GHC.Classes.eqInt ww1 ww3 } }) -}
+a301d596fe9d450523b3df836a45ce7c
+  $w$c==3 ::
+    Data.Map.Base.Map
+      JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 6,
+     Strictness: <L,U><L,1*U(U)><L,1*U(U)><L,U><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww1 :: GHC.Types.Int
+                   ww2 :: GHC.Types.Int
+                   ww3 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww4 :: GHC.Types.Int
+                   ww5 :: GHC.Types.Int ->
+                 case JackParser.SymbolTable.$fEqClassVars2 ww ww3 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case ww1 of wild1 { GHC.Types.I# x ->
+                      case ww4 of wild2 { GHC.Types.I# y ->
+                      case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.==# x y) of wild3 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True -> GHC.Classes.eqInt ww2 ww5 } } } }) -}
+368d5475c7776af44054ad7c872ee447
+  $w$c==4 ::
+    Data.Map.Base.Map
+      JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.ID
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.ID
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Types.Bool
+  {- Arity: 16,
+     Strictness: <L,U><L,U><L,1*U(U)><L,1*U(U)><L,1*U(U,1*U(U),1*U(U))><L,1*U><L,1*U(U)><L,1*U(U)><L,U><L,U><L,1*U(U)><L,1*U(U)><L,1*U(U,1*U(U),1*U(U))><L,1*U><L,1*U(U)><L,1*U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww1 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Types.Int
+                   ww4 :: JackParser.SymbolTable.LocalVars
+                   ww5 :: JackParser.SymbolTable.ID
+                   ww6 :: GHC.Types.Int
+                   ww7 :: GHC.Types.Int
+                   ww8 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww9 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                   ww10 :: GHC.Types.Int
+                   ww11 :: GHC.Types.Int
+                   ww12 :: JackParser.SymbolTable.LocalVars
+                   ww13 :: JackParser.SymbolTable.ID
+                   ww14 :: GHC.Types.Int
+                   ww15 :: GHC.Types.Int ->
+                 case JackParser.SymbolTable.$fEqClassVars2 ww ww8 of wild {
+                   GHC.Types.False -> GHC.Types.False
+                   GHC.Types.True
+                   -> case JackParser.SymbolTable.$fEqClassVars1 ww1 ww9 of wild1 {
+                        GHC.Types.False -> GHC.Types.False
+                        GHC.Types.True
+                        -> case ww2 of wild2 { GHC.Types.I# x ->
+                           case ww10 of wild3 { GHC.Types.I# y ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.==# x y) of wild4 {
+                             GHC.Types.False -> GHC.Types.False
+                             GHC.Types.True
+                             -> case ww3 of wild5 { GHC.Types.I# x1 ->
+                                case ww11 of wild6 { GHC.Types.I# y1 ->
+                                case GHC.Prim.tagToEnum#
+                                       @ GHC.Types.Bool
+                                       (GHC.Prim.==# x1 y1) of wild7 {
+                                  GHC.Types.False -> GHC.Types.False
+                                  GHC.Types.True
+                                  -> case ww4 of ww16 { JackParser.SymbolTable.LocalVars ww17 ww18 ww19 ->
+                                     case ww12 of ww20 { JackParser.SymbolTable.LocalVars ww21 ww22 ww23 ->
+                                     case JackParser.SymbolTable.$fEqClassVars2 ww17 ww21 of wild8 {
+                                       GHC.Types.False -> GHC.Types.False
+                                       GHC.Types.True
+                                       -> case ww18 of wild9 { GHC.Types.I# x2 ->
+                                          case ww22 of wild10 { GHC.Types.I# y2 ->
+                                          case GHC.Prim.tagToEnum#
+                                                 @ GHC.Types.Bool
+                                                 (GHC.Prim.==# x2 y2) of wild11 {
+                                            GHC.Types.False -> GHC.Types.False
+                                            GHC.Types.True
+                                            -> case ww19 of wild12 { GHC.Types.I# x3 ->
+                                               case ww23 of wild13 { GHC.Types.I# y3 ->
+                                               case GHC.Prim.tagToEnum#
+                                                      @ GHC.Types.Bool
+                                                      (GHC.Prim.==# x3 y3) of wild14 {
+                                                 GHC.Types.False -> GHC.Types.False
+                                                 GHC.Types.True
+                                                 -> case GHC.Base.eqString ww5 ww13 of wild15 {
+                                                      GHC.Types.False -> GHC.Types.False
+                                                      GHC.Types.True
+                                                      -> case ww6 of wild16 { GHC.Types.I# x4 ->
+                                                         case ww14 of wild17 { GHC.Types.I# y4 ->
+                                                         case GHC.Prim.tagToEnum#
+                                                                @ GHC.Types.Bool
+                                                                (GHC.Prim.==# x4 y4) of wild18 {
+                                                           GHC.Types.False -> GHC.Types.False
+                                                           GHC.Types.True
+                                                           -> GHC.Classes.eqInt
+                                                                ww7
+                                                                ww15 } } } } } } } } } } } } } } } } } } } } }) -}
+47ec8ea157cdd39d46958313dc054892
+  $w$cshowsPrec ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Show.ShowS
+  {- Arity: 5, Strictness: <L,U><L,1*U><L,1*U><L,U(U)><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww2 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                   ww3 :: GHC.Types.Int
+                   ww4 :: GHC.Types.Int ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = Data.Map.Base.$w$cshowsPrec
+                       @ [GHC.Types.Char]
+                       @ JackParser.SymbolTable.Var
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       JackParser.SymbolTable.$fShowVar
+                       0
+                       ww1
+                 } in
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = Data.Map.Base.$w$cshowsPrec
+                       @ [GHC.Types.Char]
+                       @ JackParser.SymbolTable.Fun
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       JackParser.SymbolTable.$fShowFun
+                       0
+                       ww2
+                 } in
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       JackParser.SymbolTable.$fShowClassVars8
+                       (f (GHC.Base.++
+                             @ GHC.Types.Char
+                             JackParser.SymbolTable.$fShowClassVars7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                JackParser.SymbolTable.$fShowClassVars6
+                                (f1
+                                   (GHC.Base.++
+                                      @ GHC.Types.Char
+                                      JackParser.SymbolTable.$fShowClassVars7
+                                      (GHC.Base.++
+                                         @ GHC.Types.Char
+                                         JackParser.SymbolTable.$fShowClassVars5
+                                         (case ww3 of ww5 { GHC.Types.I# ww6 ->
+                                          case GHC.Show.$wshowSignedInt
+                                                 0
+                                                 ww6
+                                                 (GHC.Base.++
+                                                    @ GHC.Types.Char
+                                                    JackParser.SymbolTable.$fShowClassVars7
+                                                    (GHC.Base.++
+                                                       @ GHC.Types.Char
+                                                       JackParser.SymbolTable.$fShowClassVars4
+                                                       (case ww4 of ww7 { GHC.Types.I# ww8 ->
+                                                        case GHC.Show.$wshowSignedInt
+                                                               0
+                                                               ww8
+                                                               (GHC.Base.++
+                                                                  @ GHC.Types.Char
+                                                                  JackParser.SymbolTable.$fShowClassVars3
+                                                                  x) of ww9 { (#,#) ww10 ww11 ->
+                                                        GHC.Types.:
+                                                          @ GHC.Types.Char
+                                                          ww10
+                                                          ww11 } }))) of ww7 { (#,#) ww8 ww9 ->
+                                          GHC.Types.: @ GHC.Types.Char ww8 ww9 } })))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Base.++
+                        @ GHC.Types.Char
+                        JackParser.SymbolTable.$fShowClassVars2
+                        (g x)
+                   GHC.Types.True
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           JackParser.SymbolTable.$fShowClassVars2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x))) }) -}
+287ec6e1613c455e49e157a9aa22e183
+  $w$cshowsPrec1 ::
+    GHC.Prim.Int#
+    -> JackParser.Lexer.FunType
+    -> JackParser.Lexer.Identifier
+    -> Data.Map.Base.Map
+         JackParser.Lexer.Identifier JackParser.Lexer.VarType
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <L,U><L,U><L,U><L,1*U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: JackParser.Lexer.FunType
+                   ww2 :: JackParser.Lexer.Identifier
+                   ww3 :: Data.Map.Base.Map
+                            JackParser.Lexer.Identifier JackParser.Lexer.VarType ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = Data.Map.Base.$w$cshowsPrec
+                       @ [GHC.Types.Char]
+                       @ [GHC.Types.Char]
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       0
+                       ww3
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       JackParser.SymbolTable.$fShowFun5
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          JackParser.SymbolTable.$fShowFun4
+                          (JackParser.Lexer.$w$cshowsPrec1
+                             ww1
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                JackParser.SymbolTable.$fShowClassVars7
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   JackParser.SymbolTable.$fShowFun3
+                                   (GHC.Types.:
+                                      @ GHC.Types.Char
+                                      GHC.Show.shows6
+                                      (GHC.Show.showLitString
+                                         ww2
+                                         (GHC.Types.:
+                                            @ GHC.Types.Char
+                                            GHC.Show.shows6
+                                            (GHC.Base.++
+                                               @ GHC.Types.Char
+                                               JackParser.SymbolTable.$fShowClassVars7
+                                               (GHC.Base.++
+                                                  @ GHC.Types.Char
+                                                  JackParser.SymbolTable.$fShowFun2
+                                                  (f (GHC.Base.++
+                                                        @ GHC.Types.Char
+                                                        JackParser.SymbolTable.$fShowClassVars3
+                                                        x)))))))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x)) }) -}
+6494d3909131d9242331b0b8c8ea5978
+  $w$cshowsPrec2 ::
+    GHC.Prim.Int#
+    -> JackParser.Lexer.Scope
+    -> GHC.Types.Int
+    -> GHC.Base.String
+    -> GHC.Base.String
+  {- Arity: 4, Strictness: <L,U><L,1*U><L,1*U(U)><L,U>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: JackParser.Lexer.Scope
+                   ww2 :: GHC.Types.Int
+                   w :: GHC.Base.String ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                     {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String[OneShot] ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       JackParser.SymbolTable.$fShowVar4
+                       (JackParser.Lexer.$w$cshowsPrec3
+                          ww1
+                          (GHC.Base.++
+                             @ GHC.Types.Char
+                             JackParser.SymbolTable.$fShowClassVars7
+                             (GHC.Base.++
+                                @ GHC.Types.Char
+                                JackParser.SymbolTable.$fShowVar3
+                                (case ww2 of ww3 { GHC.Types.I# ww4 ->
+                                 case GHC.Show.$wshowSignedInt
+                                        0
+                                        ww4
+                                        (GHC.Base.++
+                                           @ GHC.Types.Char
+                                           JackParser.SymbolTable.$fShowClassVars3
+                                           x) of ww5 { (#,#) ww6 ww7 ->
+                                 GHC.Types.: @ GHC.Types.Char ww6 ww7 } }))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        JackParser.SymbolTable.$fShowVar2
+                        (g w)
+                   GHC.Types.True
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           JackParser.SymbolTable.$fShowVar2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 w))) }) -}
+e4d7fd480800422cd56e0fb9bf4fcf46
+  $w$cshowsPrec3 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Show.ShowS
+  {- Arity: 4, Strictness: <L,U><L,1*U><L,U(U)><L,U(U)>, Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                   ww2 :: GHC.Types.Int
+                   ww3 :: GHC.Types.Int ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = Data.Map.Base.$w$cshowsPrec
+                       @ [GHC.Types.Char]
+                       @ JackParser.SymbolTable.Var
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       JackParser.SymbolTable.$fShowVar
+                       0
+                       ww1
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       JackParser.SymbolTable.$fShowLocalVars5
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          JackParser.SymbolTable.$fShowLocalVars4
+                          (f (GHC.Base.++
+                                @ GHC.Types.Char
+                                JackParser.SymbolTable.$fShowClassVars7
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   JackParser.SymbolTable.$fShowLocalVars3
+                                   (case ww2 of ww4 { GHC.Types.I# ww5 ->
+                                    case GHC.Show.$wshowSignedInt
+                                           0
+                                           ww5
+                                           (GHC.Base.++
+                                              @ GHC.Types.Char
+                                              JackParser.SymbolTable.$fShowClassVars7
+                                              (GHC.Base.++
+                                                 @ GHC.Types.Char
+                                                 JackParser.SymbolTable.$fShowLocalVars2
+                                                 (case ww3 of ww6 { GHC.Types.I# ww7 ->
+                                                  case GHC.Show.$wshowSignedInt
+                                                         0
+                                                         ww7
+                                                         (GHC.Base.++
+                                                            @ GHC.Types.Char
+                                                            JackParser.SymbolTable.$fShowClassVars3
+                                                            x) of ww8 { (#,#) ww9 ww10 ->
+                                                  GHC.Types.:
+                                                    @ GHC.Types.Char
+                                                    ww9
+                                                    ww10 } }))) of ww6 { (#,#) ww7 ww8 ->
+                                    GHC.Types.: @ GHC.Types.Char ww7 ww8 } })))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x)) }) -}
+0b97dceb66d3cbadf5be00cad15c5681
+  $w$cshowsPrec4 ::
+    GHC.Prim.Int#
+    -> JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.ID
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> GHC.Show.ShowS
+  {- Arity: 6,
+     Strictness: <L,U><L,1*U(1*U,1*U,U(U),U(U))><L,1*U(1*U,U(U),U(U))><L,U><L,U(U)><L,U(U)>,
+     Inline: [0],
+     Unfolding: (\ ww :: GHC.Prim.Int#
+                   ww1 :: JackParser.SymbolTable.ClassVars
+                   ww2 :: JackParser.SymbolTable.LocalVars
+                   ww3 :: JackParser.SymbolTable.ID
+                   ww4 :: GHC.Types.Int
+                   ww5 :: GHC.Types.Int ->
+                 let {
+                   f :: GHC.Base.String -> GHC.Base.String
+                   = case ww1 of ww6 { JackParser.SymbolTable.ClassVars ww7 ww8 ww9 ww10 ->
+                     JackParser.SymbolTable.$w$cshowsPrec 0 ww7 ww8 ww9 ww10 }
+                 } in
+                 let {
+                   f1 :: GHC.Base.String -> GHC.Base.String
+                   = case ww2 of ww6 { JackParser.SymbolTable.LocalVars ww7 ww8 ww9 ->
+                     JackParser.SymbolTable.$w$cshowsPrec3 0 ww7 ww8 ww9 }
+                 } in
+                 let {
+                   p :: GHC.Show.ShowS {- Arity: 1, Strictness: <L,1*U> -}
+                   = \ x :: GHC.Base.String ->
+                     GHC.Base.++
+                       @ GHC.Types.Char
+                       JackParser.SymbolTable.$fShowSymbolTable7
+                       (GHC.Base.++
+                          @ GHC.Types.Char
+                          JackParser.SymbolTable.$fShowSymbolTable6
+                          (f (GHC.Base.++
+                                @ GHC.Types.Char
+                                JackParser.SymbolTable.$fShowClassVars7
+                                (GHC.Base.++
+                                   @ GHC.Types.Char
+                                   JackParser.SymbolTable.$fShowSymbolTable5
+                                   (f1
+                                      (GHC.Base.++
+                                         @ GHC.Types.Char
+                                         JackParser.SymbolTable.$fShowClassVars7
+                                         (GHC.Base.++
+                                            @ GHC.Types.Char
+                                            JackParser.SymbolTable.$fShowSymbolTable4
+                                            (GHC.Types.:
+                                               @ GHC.Types.Char
+                                               GHC.Show.shows6
+                                               (GHC.Show.showLitString
+                                                  ww3
+                                                  (GHC.Types.:
+                                                     @ GHC.Types.Char
+                                                     GHC.Show.shows6
+                                                     (GHC.Base.++
+                                                        @ GHC.Types.Char
+                                                        JackParser.SymbolTable.$fShowClassVars7
+                                                        (GHC.Base.++
+                                                           @ GHC.Types.Char
+                                                           JackParser.SymbolTable.$fShowSymbolTable3
+                                                           (case ww4 of ww6 { GHC.Types.I# ww7 ->
+                                                            case GHC.Show.$wshowSignedInt
+                                                                   0
+                                                                   ww7
+                                                                   (GHC.Base.++
+                                                                      @ GHC.Types.Char
+                                                                      JackParser.SymbolTable.$fShowClassVars7
+                                                                      (GHC.Base.++
+                                                                         @ GHC.Types.Char
+                                                                         JackParser.SymbolTable.$fShowSymbolTable2
+                                                                         (case ww5 of ww8 { GHC.Types.I# ww9 ->
+                                                                          case GHC.Show.$wshowSignedInt
+                                                                                 0
+                                                                                 ww9
+                                                                                 (GHC.Base.++
+                                                                                    @ GHC.Types.Char
+                                                                                    JackParser.SymbolTable.$fShowClassVars3
+                                                                                    x) of ww10 { (#,#) ww11 ww12 ->
+                                                                          GHC.Types.:
+                                                                            @ GHC.Types.Char
+                                                                            ww11
+                                                                            ww12 } }))) of ww8 { (#,#) ww9 ww10 ->
+                                                            GHC.Types.:
+                                                              @ GHC.Types.Char
+                                                              ww9
+                                                              ww10 } })))))))))))))
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11) of wild {
+                   GHC.Types.False -> p
+                   GHC.Types.True
+                   -> \ x :: GHC.Base.String ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows9
+                        (p (GHC.Types.: @ GHC.Types.Char GHC.Show.shows8 x)) }) -}
+20624599633b463728b87c76422d1391
+  $wblockBuilder ::
+    JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.ID
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> [JackParser.AST.AST]
+    -> (# JackParser.SymbolTable.ClassVars,
+          JackParser.SymbolTable.LocalVars,
+          JackParser.SymbolTable.ID,
+          GHC.Types.Int,
+          GHC.Types.Int #)
+  {- Arity: 6,
+     Strictness: <L,U(U,U,U(U),U(U))><L,U(U,U(U),U(U))><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+e270f8bbd69a5d70ac5d367d4d4760d3
+  $wbuilder ::
+    JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.ID
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> JackParser.AST.AST
+    -> (# JackParser.SymbolTable.ClassVars,
+          JackParser.SymbolTable.LocalVars,
+          JackParser.SymbolTable.ID,
+          GHC.Types.Int,
+          GHC.Types.Int #)
+  {- Arity: 6,
+     Strictness: <L,U(U,U,U(U),U(U))><L,U(U,U(U),U(U))><L,U><L,U><L,U><S,1*U>,
+     Inline: [0] -}
+849b36bae60122d80d6f72dc9645575b
+  $wgetF ::
+    JackParser.SymbolTable.ID
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+    -> JackParser.SymbolTable.ID
+    -> GHC.Base.Maybe JackParser.SymbolTable.Fun
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,U><S,1*U><S,1*U>,
+     Inline: [0],
+     Unfolding: (\ w :: JackParser.SymbolTable.ID
+                   ww :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                   ww1 :: JackParser.SymbolTable.ID ->
+                 JackParser.SymbolTable.$slookup1
+                   @ JackParser.SymbolTable.Fun
+                   (GHC.Base.++
+                      @ GHC.Types.Char
+                      ww1
+                      (GHC.CString.unpackAppendCString# "."# w))
+                   ww) -}
+cafd7febc7fcb09c6a567cad9610594b
+  $wgetIndex ::
+    JackParser.Lexer.Scope
+    -> JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.LocalVars
+    -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,1*U><L,1*U(A,A,1*U(U),1*U(U))><L,1*U(A,1*U(U),1*U(U))>,
+     Inline: [0],
+     Unfolding: (\ w :: JackParser.Lexer.Scope
+                   ww :: JackParser.SymbolTable.ClassVars
+                   ww1 :: JackParser.SymbolTable.LocalVars ->
+                 case w of wild {
+                   JackParser.Lexer.Field
+                   -> case ww of wild1 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                      x3 }
+                   JackParser.Lexer.Static
+                   -> case ww of wild1 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                      x2 }
+                   JackParser.Lexer.Local
+                   -> case ww1 of wild1 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                      x1 }
+                   JackParser.Lexer.Argument
+                   -> case ww1 of wild1 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                      x2 } }) -}
+cce37e3f58d899c268cb95dd44b2d5c0
+  $wgetV ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.ClassVars
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+    -> GHC.Base.Maybe JackParser.SymbolTable.Var
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S,U><L,1*U(1*U,A,A,A)><S,1*U>, Inline: [0],
+     Unfolding: (\ w :: JackParser.SymbolTable.ID
+                   ww :: JackParser.SymbolTable.ClassVars
+                   ww1 :: Data.Map.Base.Map
+                            JackParser.SymbolTable.ID JackParser.SymbolTable.Var ->
+                 case JackParser.SymbolTable.$slookup1
+                        @ JackParser.SymbolTable.Var
+                        w
+                        ww1 of wild {
+                   GHC.Base.Nothing
+                   -> case ww of wild1 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                      JackParser.SymbolTable.$slookup1 @ JackParser.SymbolTable.Var w x }
+                   GHC.Base.Just ds -> wild }) -}
+c495fb0130ae8d28a730372c376d1105
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map JackParser.Lexer.Identifier a
+    -> [(JackParser.Lexer.Identifier, a)]
+    -> Data.Map.Base.Map JackParser.Lexer.Identifier a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+151d77b339bfda7d12420b1946592340
+  $wputV ::
+    JackParser.SymbolTable.ID
+    -> JackParser.Lexer.Scope
+    -> GHC.Types.Int
+    -> JackParser.SymbolTable.ClassVars
+    -> JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.ID
+    -> GHC.Types.Int
+    -> GHC.Types.Int
+    -> (# JackParser.SymbolTable.ClassVars,
+          JackParser.SymbolTable.LocalVars,
+          JackParser.SymbolTable.ID,
+          GHC.Types.Int,
+          GHC.Types.Int #)
+  {- Arity: 8,
+     Strictness: <L,1*U><S,U><L,U><L,U(U,U,U(U),U(U))><L,U(U,U(U),U(U))><L,U><L,U><L,U>,
+     Inline: [0],
+     Unfolding: (\ w :: JackParser.SymbolTable.ID
+                   ww :: JackParser.Lexer.Scope
+                   ww1 :: GHC.Types.Int
+                   ww2 :: JackParser.SymbolTable.ClassVars
+                   ww3 :: JackParser.SymbolTable.LocalVars
+                   ww4 :: JackParser.SymbolTable.ID
+                   ww5 :: GHC.Types.Int
+                   ww6 :: GHC.Types.Int ->
+                 let {
+                   wild :: JackParser.SymbolTable.Var
+                   = JackParser.SymbolTable.Var ww ww1
+                 } in
+                 let {
+                   $w$j :: GHC.Prim.Void#
+                           -> (# JackParser.SymbolTable.ClassVars,
+                                 JackParser.SymbolTable.LocalVars,
+                                 JackParser.SymbolTable.ID,
+                                 GHC.Types.Int,
+                                 GHC.Types.Int #)
+                     {- Arity: 1, Strictness: <L,U>, Inline: [0] -}
+                   = \ void :: GHC.Prim.Void#[OneShot] ->
+                     case ww of wild1 {
+                       JackParser.Lexer.Field
+                       -> (# case ww2 of wild2 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                             JackParser.SymbolTable.ClassVars
+                               x
+                               x1
+                               x2
+                               (GHC.Enum.$fEnumInt_$csucc x3) },
+                             case ww3 of wild2 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                             JackParser.SymbolTable.LocalVars
+                               (JackParser.SymbolTable.$sinsert_$sgo10
+                                  @ JackParser.SymbolTable.Var
+                                  w
+                                  wild
+                                  x)
+                               x1
+                               x2 },
+                             ww4,
+                             ww5,
+                             ww6 #)
+                       JackParser.Lexer.Static
+                       -> (# case ww2 of wild2 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                             JackParser.SymbolTable.ClassVars
+                               x
+                               x1
+                               (GHC.Enum.$fEnumInt_$csucc x2)
+                               x3 },
+                             case ww3 of wild2 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                             JackParser.SymbolTable.LocalVars
+                               (JackParser.SymbolTable.$sinsert_$sgo10
+                                  @ JackParser.SymbolTable.Var
+                                  w
+                                  wild
+                                  x)
+                               x1
+                               x2 },
+                             ww4,
+                             ww5,
+                             ww6 #)
+                       JackParser.Lexer.Local
+                       -> (# ww2,
+                             case ww3 of wild2 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                             JackParser.SymbolTable.LocalVars
+                               (JackParser.SymbolTable.$sinsert_$sgo10
+                                  @ JackParser.SymbolTable.Var
+                                  w
+                                  wild
+                                  x)
+                               (GHC.Enum.$fEnumInt_$csucc x1)
+                               x2 },
+                             ww4,
+                             ww5,
+                             ww6 #)
+                       JackParser.Lexer.Argument
+                       -> (# ww2,
+                             case ww3 of wild2 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                             JackParser.SymbolTable.LocalVars
+                               (JackParser.SymbolTable.$sinsert_$sgo10
+                                  @ JackParser.SymbolTable.Var
+                                  w
+                                  wild
+                                  x)
+                               x1
+                               (GHC.Enum.$fEnumInt_$csucc x2) },
+                             ww4,
+                             ww5,
+                             ww6 #) }
+                 } in
+                 case ww of wild1 {
+                   JackParser.Lexer.Field
+                   -> (# case ww2 of wild2 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                         JackParser.SymbolTable.ClassVars
+                           (JackParser.SymbolTable.$sinsert_$sgo10
+                              @ JackParser.SymbolTable.Var
+                              w
+                              wild
+                              x)
+                           x1
+                           x2
+                           (GHC.Enum.$fEnumInt_$csucc x3) },
+                         ww3,
+                         ww4,
+                         ww5,
+                         ww6 #)
+                   JackParser.Lexer.Static
+                   -> (# case ww2 of wild2 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                         JackParser.SymbolTable.ClassVars
+                           (JackParser.SymbolTable.$sinsert_$sgo10
+                              @ JackParser.SymbolTable.Var
+                              w
+                              wild
+                              x)
+                           x1
+                           (GHC.Enum.$fEnumInt_$csucc x2)
+                           x3 },
+                         ww3,
+                         ww4,
+                         ww5,
+                         ww6 #)
+                   JackParser.Lexer.Local -> $w$j GHC.Prim.void#
+                   JackParser.Lexer.Argument -> $w$j GHC.Prim.void# }) -}
+6a34629debf07cc496bdf2bd4d434981
+  data ClassVars
+    = ClassVars {_classV :: Data.Map.Base.Map
+                              JackParser.SymbolTable.ID JackParser.SymbolTable.Var,
+                 _functions :: Data.Map.Base.Map
+                                 JackParser.SymbolTable.ID JackParser.SymbolTable.Fun,
+                 _staticCIndex :: GHC.Types.Int,
+                 _fieldCIndex :: GHC.Types.Int}
+20f836858cefb41e8a434aee3103e862
+  data Fun
+    = Fun {funType :: JackParser.Lexer.FunType,
+           retType :: JackParser.Lexer.Identifier,
+           args :: Data.Map.Base.Map
+                     JackParser.Lexer.Identifier JackParser.Lexer.VarType}
+4fa487704345cc7786c1c54715df4287
+  type ID = JackParser.Lexer.Identifier
+b1e032173030b5ec3015edccf0b221cd
+  data LocalVars
+    = LocalVars {_localV :: Data.Map.Base.Map
+                              JackParser.SymbolTable.ID JackParser.SymbolTable.Var,
+                 _lclLIndex :: GHC.Types.Int,
+                 _argLIndex :: GHC.Types.Int}
+0066868d9ca26c17ffd15ccd114e1ce2
+  data SymbolTable
+    = SymbolTable {_c :: JackParser.SymbolTable.ClassVars,
+                   _l :: JackParser.SymbolTable.LocalVars,
+                   _className :: JackParser.SymbolTable.ID,
+                   _whileIndex :: GHC.Types.Int,
+                   _ifIndex :: GHC.Types.Int}
+ea6f6b9c578a7dc7e585764c053a89b9
+  data Var
+    = Var {varScope :: JackParser.Lexer.Scope,
+           varIndex :: GHC.Types.Int}
+b1cd8e125c2a487e2734862acf504e85
+  _argLIndex :: JackParser.SymbolTable.LocalVars -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.LocalVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.LocalVars ->
+                 case ds of wild { JackParser.SymbolTable.LocalVars ds1 ds2 ds3 ->
+                 ds3 }) -}
+6022079e462bfc94ca7111c7fd647994
+  _c ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.ClassVars
+  RecSel JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(SLLLL),1*U(1*U(U,U,U,U),A,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable ds1 ds2 ds3 ds4 ds5 ->
+                 ds1 }) -}
+ea34d562fdb2e040e2161840b4c17147
+  _className ::
+    JackParser.SymbolTable.SymbolTable -> JackParser.SymbolTable.ID
+  RecSel JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSLL),1*U(A,A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable ds1 ds2 ds3 ds4 ds5 ->
+                 ds3 }) -}
+3b2742bf52b318ff2338db053779bc7e
+  _classV ::
+    JackParser.SymbolTable.ClassVars
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+  RecSel JackParser.SymbolTable.ClassVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLLL),1*U(1*U,A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars ds1 ds2 ds3 ds4 ->
+                 ds1 }) -}
+d38f3cfda42964f1fa26013c8aa23415
+  _fieldCIndex :: JackParser.SymbolTable.ClassVars -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.ClassVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLLS),1*U(A,A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars ds1 ds2 ds3 ds4 ->
+                 ds4 }) -}
+e786a1e308878bc7b2b08b99b07f3b61
+  _functions ::
+    JackParser.SymbolTable.ClassVars
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+  RecSel JackParser.SymbolTable.ClassVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSLL),1*U(A,1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars ds1 ds2 ds3 ds4 ->
+                 ds2 }) -}
+d5da30793271f1dc19a15050ed9ce3ac
+  _ifIndex :: JackParser.SymbolTable.SymbolTable -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLLS),1*U(A,A,A,A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable ds1 ds2 ds3 ds4 ds5 ->
+                 ds5 }) -}
+838cbb66fa4a69c0b2b0d5eae7b56727
+  _l ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.LocalVars
+  RecSel JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LSLLL),1*U(A,1*U(U,U,U),A,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable ds1 ds2 ds3 ds4 ds5 ->
+                 ds2 }) -}
+ce24c9bd8303654f0f8fc9340fb3b263
+  _lclLIndex :: JackParser.SymbolTable.LocalVars -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.LocalVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.LocalVars ->
+                 case ds of wild { JackParser.SymbolTable.LocalVars ds1 ds2 ds3 ->
+                 ds2 }) -}
+855407fe24f271d03f0a23ee599a8a5b
+  _localV ::
+    JackParser.SymbolTable.LocalVars
+    -> Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+  RecSel JackParser.SymbolTable.LocalVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.LocalVars ->
+                 case ds of wild { JackParser.SymbolTable.LocalVars ds1 ds2 ds3 ->
+                 ds1 }) -}
+5eaf450cc9a6aad28355746ff1b15ead
+  _staticCIndex :: JackParser.SymbolTable.ClassVars -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.ClassVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLSL),1*U(A,A,1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars ds1 ds2 ds3 ds4 ->
+                 ds3 }) -}
+2de1dd76e232a2071fea0e6284cbd67f
+  _whileIndex :: JackParser.SymbolTable.SymbolTable -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <S(LLLSL),1*U(A,A,A,1*U(U),A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable ds1 ds2 ds3 ds4 ds5 ->
+                 ds4 }) -}
+d35d6ad7fa1b3d6d03a3f9cf837abc48
+  argLIndex ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.LocalVars GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: GHC.Types.Int -> f GHC.Types.Int
+                   ds :: JackParser.SymbolTable.LocalVars ->
+                 case ds of wild { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.LocalVars
+                   (\ y :: GHC.Types.Int -> JackParser.SymbolTable.LocalVars x x1 y)
+                   (f1 x2) }) -}
+08bc1d1ec3f0330027883c7454177593
+  args ::
+    JackParser.SymbolTable.Fun
+    -> Data.Map.Base.Map
+         JackParser.Lexer.Identifier JackParser.Lexer.VarType
+  RecSel JackParser.SymbolTable.Fun
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LLS),1*U(A,A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.Fun ->
+                 case ds of wild { JackParser.SymbolTable.Fun ds1 ds2 ds3 ->
+                 ds3 }) -}
+e1a0b93a326f3b1c29b600e7f85a6369
+  blockBuilder ::
+    JackParser.SymbolTable.SymbolTable
+    -> [JackParser.AST.AST] -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 2,
+     Strictness: <S,U(U(U,U,U(U),U(U)),U(U,U(U),U(U)),U,U,U)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.SymbolTable
+                   w1 :: [JackParser.AST.AST] ->
+                 case w of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 case JackParser.SymbolTable.$wblockBuilder
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        w1 of ww6 { (#,,,,#) ww7 ww8 ww9 ww10 ww11 ->
+                 JackParser.SymbolTable.SymbolTable ww7 ww8 ww9 ww10 ww11 } }) -}
+07c530b27376add68ea6b2b53ce36edf
+  builder ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.AST.AST -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 2,
+     Strictness: <S,U(U(U,U,U(U),U(U)),U(U,U(U),U(U)),U,U,U)><S,1*U>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.SymbolTable
+                   w1 :: JackParser.AST.AST ->
+                 case w of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 case JackParser.SymbolTable.$wbuilder
+                        ww1
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                        w1 of ww6 { (#,,,,#) ww7 ww8 ww9 ww10 ww11 ->
+                 JackParser.SymbolTable.SymbolTable ww7 ww8 ww9 ww10 ww11 } }) -}
+c067aac598325f61a5760a632e65da62
+  c ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.SymbolTable JackParser.SymbolTable.ClassVars
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: JackParser.SymbolTable.ClassVars
+                         -> f JackParser.SymbolTable.ClassVars
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ JackParser.SymbolTable.ClassVars
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: JackParser.SymbolTable.ClassVars ->
+                    JackParser.SymbolTable.SymbolTable y x1 x2 x3 x4)
+                   (f1 x) }) -}
+f6dc0e772012c2b381a08dcce6a60322
+  className ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.SymbolTable JackParser.SymbolTable.ID
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: JackParser.SymbolTable.ID -> f JackParser.SymbolTable.ID
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ JackParser.SymbolTable.ID
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: JackParser.SymbolTable.ID ->
+                    JackParser.SymbolTable.SymbolTable x x1 y x3 x4)
+                   (f1 x2) }) -}
+fdb83a0d647e46dde355542956b977f3
+  className_$sclassName ::
+    (JackParser.SymbolTable.ID
+     -> Control.Applicative.Const
+          JackParser.SymbolTable.ID JackParser.SymbolTable.ID)
+    -> JackParser.SymbolTable.SymbolTable
+    -> Control.Applicative.Const
+         JackParser.SymbolTable.ID JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U)><S,1*U(A,A,U,A,A)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ f :: JackParser.SymbolTable.ID
+                        -> Control.Applicative.Const
+                             JackParser.SymbolTable.ID JackParser.SymbolTable.ID
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 Control.Applicative.$fFunctorConst_$cfmap
+                   @ [GHC.Types.Char]
+                   @ JackParser.SymbolTable.ID
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: JackParser.SymbolTable.ID ->
+                    JackParser.SymbolTable.SymbolTable x x1 y x3 x4)
+                   (f x2) }) -}
+0e617a6c3aae4ff5e9493c20c1b36943
+  classV ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.ClassVars
+      (Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                         -> f (Data.Map.Base.Map
+                                 JackParser.SymbolTable.ID JackParser.SymbolTable.Var)
+                   ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ (Data.Map.Base.Map
+                        JackParser.SymbolTable.ID JackParser.SymbolTable.Var)
+                   @ JackParser.SymbolTable.ClassVars
+                   (\ y :: Data.Map.Base.Map
+                             JackParser.SymbolTable.ID JackParser.SymbolTable.Var ->
+                    JackParser.SymbolTable.ClassVars y x1 x2 x3)
+                   (f1 x) }) -}
+e38bc8765f64091d7315b047f67ae72a
+  clearLocals ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.clearLocals1
+                  `cast`
+                (<JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Data.Functor.Identity.NTCo:Identity[0]
+                          <JackParser.SymbolTable.SymbolTable>_R) -}
+7acc7583e3bf419faee2d930a544275a
+  clearLocals1 ::
+    JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (JackParser.SymbolTable.clearLocals_$sl
+                   JackParser.SymbolTable.clearLocals2
+                     `cast`
+                   (<JackParser.SymbolTable.LocalVars>_R
+                    ->_R Sym (Data.Functor.Identity.NTCo:Identity[0]
+                                  <JackParser.SymbolTable.LocalVars>_R))) -}
+647389cd441919fa61cb0fe129efdfae
+  clearLocals2 ::
+    JackParser.SymbolTable.LocalVars
+    -> JackParser.SymbolTable.LocalVars
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,A>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ ds :: JackParser.SymbolTable.LocalVars ->
+                 JackParser.SymbolTable.clearLocals3) -}
+f9944713151fbd621c00723327a465b0
+  clearLocals3 :: JackParser.SymbolTable.LocalVars
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (JackParser.SymbolTable.LocalVars
+                   (Data.Map.Base.Tip
+                      @ JackParser.SymbolTable.ID
+                      @ JackParser.SymbolTable.Var)
+                   JackParser.SymbolTable.clearLocals4
+                   JackParser.SymbolTable.clearLocals4) -}
+80610608744a57eea40a39645ce542e1
+  clearLocals4 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+12120e49bc605d36216181a54eb86c88
+  clearLocals_$sl ::
+    (JackParser.SymbolTable.LocalVars
+     -> Data.Functor.Identity.Identity JackParser.SymbolTable.LocalVars)
+    -> JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><S,1*U(U,U,U,U,U)>m,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ f :: JackParser.SymbolTable.LocalVars
+                        -> Data.Functor.Identity.Identity JackParser.SymbolTable.LocalVars
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 Data.Functor.Identity.$fFunctorIdentity_$cfmap
+                   @ JackParser.SymbolTable.LocalVars
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: JackParser.SymbolTable.LocalVars ->
+                    JackParser.SymbolTable.SymbolTable x y x2 x3 x4)
+                   (f x1) }) -}
+fbb874f547af2bc8241aba2159b8d101
+  emptyTable :: JackParser.SymbolTable.SymbolTable
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (JackParser.SymbolTable.SymbolTable
+                   JackParser.SymbolTable.emptyTable1
+                   JackParser.SymbolTable.clearLocals3
+                   (GHC.Types.[] @ GHC.Types.Char)
+                   JackParser.SymbolTable.clearLocals4
+                   JackParser.SymbolTable.clearLocals4) -}
+cd95ded7576f3a87fea574726e805439
+  emptyTable1 :: JackParser.SymbolTable.ClassVars
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (JackParser.SymbolTable.ClassVars
+                   (Data.Map.Base.Tip
+                      @ JackParser.SymbolTable.ID
+                      @ JackParser.SymbolTable.Var)
+                   (Data.Map.Base.Tip
+                      @ JackParser.SymbolTable.ID
+                      @ JackParser.SymbolTable.Fun)
+                   JackParser.SymbolTable.clearLocals4
+                   JackParser.SymbolTable.clearLocals4) -}
+3a689417ebc415b7e01a63e722fdb9ac
+  fieldCIndex ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.ClassVars GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: GHC.Types.Int -> f GHC.Types.Int
+                   ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.ClassVars
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.ClassVars x x1 x2 y)
+                   (f1 x3) }) -}
+555afb0846e4e9073a9c31f7bd6e9d2a
+  funType :: JackParser.SymbolTable.Fun -> JackParser.Lexer.FunType
+  RecSel JackParser.SymbolTable.Fun
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SLL),1*U(1*U,A,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.Fun ->
+                 case ds of wild { JackParser.SymbolTable.Fun ds1 ds2 ds3 ->
+                 ds1 }) -}
+3fa96f7368383d99d251de14fb56ea40
+  functions ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.ClassVars
+      (Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Fun)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Fun
+                         -> f (Data.Map.Base.Map
+                                 JackParser.SymbolTable.ID JackParser.SymbolTable.Fun)
+                   ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ (Data.Map.Base.Map
+                        JackParser.SymbolTable.ID JackParser.SymbolTable.Fun)
+                   @ JackParser.SymbolTable.ClassVars
+                   (\ y :: Data.Map.Base.Map
+                             JackParser.SymbolTable.ID JackParser.SymbolTable.Fun ->
+                    JackParser.SymbolTable.ClassVars x y x2 x3)
+                   (f1 x1) }) -}
+a066d0fe632f4aa8bcb6e97c0f84e5d0
+  getF ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.SymbolTable
+    -> GHC.Base.Maybe JackParser.SymbolTable.Fun
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U><S(S(LSLL)LSLL),1*U(1*U(A,1*U,A,A),A,1*U,A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.ID
+                   w1 :: JackParser.SymbolTable.SymbolTable ->
+                 case w1 of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 case ww1 of ww6 { JackParser.SymbolTable.ClassVars ww7 ww8 ww9 ww10 ->
+                 JackParser.SymbolTable.$wgetF w ww8 ww3 } }) -}
+a4de8cf044b0ba2d46f89a076f129beb
+  getIf :: JackParser.SymbolTable.SymbolTable -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.getIf1
+                  `cast`
+                (<JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Control.Applicative.NTCo:Const[0]
+                          <GHC.Types.Int>_R <JackParser.SymbolTable.SymbolTable>_P) -}
+a81c460061aa9388f6977d7165f30680
+  getIf1 ::
+    JackParser.SymbolTable.SymbolTable
+    -> Control.Applicative.Const
+         GHC.Types.Int JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (JackParser.SymbolTable.getIf_$swhileIndex
+                   JackParser.SymbolTable.getIf2
+                     `cast`
+                   (<GHC.Types.Int>_R
+                    ->_R Sym (Control.Applicative.NTCo:Const[0]
+                                  <GHC.Types.Int>_R <GHC.Types.Int>_P))) -}
+73177cff1da367ea6618ecf155266a14
+  getIf2 :: GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U)>m,
+     Unfolding: InlineRule (1, True, True)
+                (\ tpl :: GHC.Types.Int -> tpl) -}
+5d03787be3e36268fb24f5ffe0417ecb
+  getIf_$swhileIndex ::
+    (GHC.Types.Int
+     -> Control.Applicative.Const GHC.Types.Int GHC.Types.Int)
+    -> JackParser.SymbolTable.SymbolTable
+    -> Control.Applicative.Const
+         GHC.Types.Int JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <C(S),1*C1(U(U))><S,1*U(A,A,A,U,A)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ f :: GHC.Types.Int
+                        -> Control.Applicative.Const GHC.Types.Int GHC.Types.Int
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 Control.Applicative.$fFunctorConst_$cfmap
+                   @ GHC.Types.Int
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.SymbolTable x x1 x2 y x4)
+                   (f x3) }) -}
+8fb7590fd992b23029ec382444bb895d
+  getIndex ::
+    JackParser.Lexer.Scope
+    -> JackParser.SymbolTable.SymbolTable -> GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,1*U><S,1*U(1*U(A,A,1*U(U),1*U(U)),1*U(A,1*U(U),1*U(U)),A,A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.Lexer.Scope
+                   w1 :: JackParser.SymbolTable.SymbolTable ->
+                 case w1 of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 JackParser.SymbolTable.$wgetIndex w ww1 ww2 }) -}
+944a87418544bff19ccdee0f6d31664d
+  getV ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.SymbolTable
+    -> GHC.Base.Maybe JackParser.SymbolTable.Var
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <S,U><S(LS(SLL)LLL),1*U(1*U(1*U,A,A,A),1*U(1*U,A,A),A,A,A)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.SymbolTable.ID
+                   w1 :: JackParser.SymbolTable.SymbolTable ->
+                 case w1 of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 case ww2 of ww6 { JackParser.SymbolTable.LocalVars ww7 ww8 ww9 ->
+                 JackParser.SymbolTable.$wgetV w ww1 ww7 } }) -}
+86aeeef9e26b59a3257064e53c2d9a5b
+  getWhile :: JackParser.SymbolTable.SymbolTable -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.getIf1
+                  `cast`
+                (<JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Control.Applicative.NTCo:Const[0]
+                          <GHC.Types.Int>_R <JackParser.SymbolTable.SymbolTable>_P) -}
+e69d8e455f95ba98cfa25e53fa66eba1
+  ifIndex ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.SymbolTable GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: GHC.Types.Int -> f GHC.Types.Int
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.SymbolTable x x1 x2 x3 y)
+                   (f1 x4) }) -}
+fb84d46a2e540c3354e311872a9b4680
+  ifIndex_$sifIndex ::
+    (GHC.Types.Int -> Data.Functor.Identity.Identity GHC.Types.Int)
+    -> JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><S,1*U(U,U,U,U,U)>m,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ f :: GHC.Types.Int
+                        -> Data.Functor.Identity.Identity GHC.Types.Int
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 Data.Functor.Identity.$fFunctorIdentity_$cfmap
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.SymbolTable x x1 x2 x3 y)
+                   (f x4) }) -}
+66e56af265d07124822b23f7592f6178
+  inc ::
+    JackParser.Lexer.Scope
+    -> JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 2,
+     Strictness: <S,1*U><S,1*U(U(U,U,U(U),U(U)),U(U,U(U),U(U)),U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: JackParser.Lexer.Scope
+                   w1 :: JackParser.SymbolTable.SymbolTable ->
+                 case w1 of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 case w of wild {
+                   JackParser.Lexer.Field
+                   -> JackParser.SymbolTable.SymbolTable
+                        (case ww1 of wild1 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                         JackParser.SymbolTable.ClassVars
+                           x
+                           x1
+                           x2
+                           (GHC.Enum.$fEnumInt_$csucc x3) })
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                   JackParser.Lexer.Static
+                   -> JackParser.SymbolTable.SymbolTable
+                        (case ww1 of wild1 { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                         JackParser.SymbolTable.ClassVars
+                           x
+                           x1
+                           (GHC.Enum.$fEnumInt_$csucc x2)
+                           x3 })
+                        ww2
+                        ww3
+                        ww4
+                        ww5
+                   JackParser.Lexer.Local
+                   -> JackParser.SymbolTable.SymbolTable
+                        ww1
+                        (case ww2 of wild1 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                         JackParser.SymbolTable.LocalVars
+                           x
+                           (GHC.Enum.$fEnumInt_$csucc x1)
+                           x2 })
+                        ww3
+                        ww4
+                        ww5
+                   JackParser.Lexer.Argument
+                   -> JackParser.SymbolTable.SymbolTable
+                        ww1
+                        (case ww2 of wild1 { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                         JackParser.SymbolTable.LocalVars
+                           x
+                           x1
+                           (GHC.Enum.$fEnumInt_$csucc x2) })
+                        ww3
+                        ww4
+                        ww5 } }) -}
+ca2cb3fd10d7c635d66f8898a8e2fce4
+  incIf ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.incIf1
+                  `cast`
+                (<JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Data.Functor.Identity.NTCo:Identity[0]
+                          <JackParser.SymbolTable.SymbolTable>_R) -}
+93a8b22fb27a83524b69c21ff0672248
+  incIf1 ::
+    JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 1,
+     Unfolding: (JackParser.SymbolTable.ifIndex_$sifIndex
+                   GHC.Enum.$fEnumInt_$csucc
+                     `cast`
+                   (<GHC.Types.Int>_R
+                    ->_R Sym (Data.Functor.Identity.NTCo:Identity[0]
+                                  <GHC.Types.Int>_R))) -}
+ac18602fc24af99e26849cca67f75892
+  incWhile ::
+    JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 1,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.incWhile1
+                  `cast`
+                (<JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Data.Functor.Identity.NTCo:Identity[0]
+                          <JackParser.SymbolTable.SymbolTable>_R) -}
+e2ee804bd65c88f17dba2a8c08479e06
+  incWhile1 ::
+    JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 1,
+     Unfolding: (JackParser.SymbolTable.incWhile_$swhileIndex
+                   GHC.Enum.$fEnumInt_$csucc
+                     `cast`
+                   (<GHC.Types.Int>_R
+                    ->_R Sym (Data.Functor.Identity.NTCo:Identity[0]
+                                  <GHC.Types.Int>_R))) -}
+57fdf6115b10cdb6f7964770b1af1a99
+  incWhile_$swhileIndex ::
+    (GHC.Types.Int -> Data.Functor.Identity.Identity GHC.Types.Int)
+    -> JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,1*C1(U)><S,1*U(U,U,U,U,U)>m,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ f :: GHC.Types.Int
+                        -> Data.Functor.Identity.Identity GHC.Types.Int
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 Data.Functor.Identity.$fFunctorIdentity_$cfmap
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.SymbolTable x x1 x2 y x4)
+                   (f x3) }) -}
+5cc717dfa3c13162b9b7e68fb9be5623
+  l ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.SymbolTable JackParser.SymbolTable.LocalVars
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: JackParser.SymbolTable.LocalVars
+                         -> f JackParser.SymbolTable.LocalVars
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ JackParser.SymbolTable.LocalVars
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: JackParser.SymbolTable.LocalVars ->
+                    JackParser.SymbolTable.SymbolTable x y x2 x3 x4)
+                   (f1 x1) }) -}
+584d5d0f097f4cedb88afabd29c9d87e
+  lclLIndex ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.LocalVars GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: GHC.Types.Int -> f GHC.Types.Int
+                   ds :: JackParser.SymbolTable.LocalVars ->
+                 case ds of wild { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.LocalVars
+                   (\ y :: GHC.Types.Int -> JackParser.SymbolTable.LocalVars x y x2)
+                   (f1 x1) }) -}
+faab3144978ef793bcd5ab5839f11a5c
+  localV ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.LocalVars
+      (Data.Map.Base.Map
+         JackParser.SymbolTable.ID JackParser.SymbolTable.Var)
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: Data.Map.Base.Map
+                           JackParser.SymbolTable.ID JackParser.SymbolTable.Var
+                         -> f (Data.Map.Base.Map
+                                 JackParser.SymbolTable.ID JackParser.SymbolTable.Var)
+                   ds :: JackParser.SymbolTable.LocalVars ->
+                 case ds of wild { JackParser.SymbolTable.LocalVars x x1 x2 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ (Data.Map.Base.Map
+                        JackParser.SymbolTable.ID JackParser.SymbolTable.Var)
+                   @ JackParser.SymbolTable.LocalVars
+                   (\ y :: Data.Map.Base.Map
+                             JackParser.SymbolTable.ID JackParser.SymbolTable.Var ->
+                    JackParser.SymbolTable.LocalVars y x1 x2)
+                   (f1 x) }) -}
+1a3af7fa58059920db285ddf84295d40
+  name ::
+    JackParser.SymbolTable.SymbolTable -> JackParser.SymbolTable.ID
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.name1
+                  `cast`
+                (<JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Control.Applicative.NTCo:Const[0]
+                          <JackParser.SymbolTable.ID>_R
+                          <JackParser.SymbolTable.SymbolTable>_P) -}
+d6e4b09e9557f755fa538d572de1cafe
+  name1 ::
+    JackParser.SymbolTable.SymbolTable
+    -> Control.Applicative.Const
+         JackParser.SymbolTable.ID JackParser.SymbolTable.SymbolTable
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (JackParser.SymbolTable.className_$sclassName
+                   JackParser.SymbolTable.name2
+                     `cast`
+                   (<JackParser.SymbolTable.ID>_R
+                    ->_R Sym (Control.Applicative.NTCo:Const[0]
+                                  <JackParser.SymbolTable.ID>_R <[GHC.Types.Char]>_P))) -}
+5cb8eec9b76398de99850f7a95e72b5f
+  name2 :: JackParser.SymbolTable.ID -> JackParser.SymbolTable.ID
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, True)
+                (\ tpl :: JackParser.SymbolTable.ID -> tpl) -}
+00084992174220979c0e9f53d257232f
+  putF ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.Fun
+    -> JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 3,
+     Strictness: <L,U><L,U><S,1*U(1*U(U,1*U,U,U),U,U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: JackParser.SymbolTable.ID
+                   w1 :: JackParser.SymbolTable.Fun
+                   w2 :: JackParser.SymbolTable.SymbolTable ->
+                 case w2 of ww { JackParser.SymbolTable.SymbolTable ww1 ww2 ww3 ww4 ww5 ->
+                 JackParser.SymbolTable.SymbolTable
+                   (case ww1 of wild { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                    JackParser.SymbolTable.ClassVars
+                      x
+                      (JackParser.SymbolTable.$sinsert_$sgo10
+                         @ JackParser.SymbolTable.Fun
+                         (GHC.Base.++
+                            @ GHC.Types.Char
+                            ww3
+                            (GHC.CString.unpackAppendCString# "."# w))
+                         w1
+                         x1)
+                      x2
+                      x3 })
+                   ww2
+                   ww3
+                   ww4
+                   ww5 }) -}
+1c2b5c4e200270ebe52d59726e13f7af
+  putName ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(U,U,A,U,U)>m,
+     Unfolding: InlineRule (0, True, True)
+                JackParser.SymbolTable.putName1
+                  `cast`
+                (<JackParser.SymbolTable.ID>_R
+                 ->_R <JackParser.SymbolTable.SymbolTable>_R
+                 ->_R Data.Functor.Identity.NTCo:Identity[0]
+                          <JackParser.SymbolTable.SymbolTable>_R) -}
+a98154309c8a316d267794f7b6dc3f06
+  putName1 ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.SymbolTable
+    -> Data.Functor.Identity.Identity
+         JackParser.SymbolTable.SymbolTable
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U(U,U,A,U,U)>m,
+     Unfolding: InlineRule (2, True, False)
+                (\ n :: JackParser.SymbolTable.ID
+                   eta :: JackParser.SymbolTable.SymbolTable ->
+                 case eta of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 (JackParser.SymbolTable.SymbolTable x x1 n x3 x4)
+                   `cast`
+                 (Sym (Data.Functor.Identity.NTCo:Identity[0]
+                           <JackParser.SymbolTable.SymbolTable>_R)) }) -}
+8054dab18c39ec01f69b106c33850142
+  putV ::
+    JackParser.SymbolTable.ID
+    -> JackParser.SymbolTable.Var
+    -> JackParser.SymbolTable.SymbolTable
+    -> JackParser.SymbolTable.SymbolTable
+  {- Arity: 3,
+     Strictness: <L,1*U><S(SL),1*U(U,U)><S,1*U(U(U,U,U(U),U(U)),U(U,U(U),U(U)),U,U,U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, False)
+                (\ w :: JackParser.SymbolTable.ID
+                   w1 :: JackParser.SymbolTable.Var
+                   w2 :: JackParser.SymbolTable.SymbolTable ->
+                 case w1 of ww { JackParser.SymbolTable.Var ww1 ww2 ->
+                 case w2 of ww3 { JackParser.SymbolTable.SymbolTable ww4 ww5 ww6 ww7 ww8 ->
+                 case JackParser.SymbolTable.$wputV
+                        w
+                        ww1
+                        ww2
+                        ww4
+                        ww5
+                        ww6
+                        ww7
+                        ww8 of ww9 { (#,,,,#) ww10 ww11 ww12 ww13 ww14 ->
+                 JackParser.SymbolTable.SymbolTable
+                   ww10
+                   ww11
+                   ww12
+                   ww13
+                   ww14 } } }) -}
+e1d8daca02f53cf7e13bcee9ba9e76ed
+  retType ::
+    JackParser.SymbolTable.Fun -> JackParser.Lexer.Identifier
+  RecSel JackParser.SymbolTable.Fun
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LSL),1*U(A,1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.Fun ->
+                 case ds of wild { JackParser.SymbolTable.Fun ds1 ds2 ds3 ->
+                 ds2 }) -}
+d1ef4b2c53cf387923fa3f92cd116d11
+  staticCIndex ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.ClassVars GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: GHC.Types.Int -> f GHC.Types.Int
+                   ds :: JackParser.SymbolTable.ClassVars ->
+                 case ds of wild { JackParser.SymbolTable.ClassVars x x1 x2 x3 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.ClassVars
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.ClassVars x x1 y x3)
+                   (f1 x2) }) -}
+4e7933e349aa749aed85312d98b7c2b7
+  varIndex :: JackParser.SymbolTable.Var -> GHC.Types.Int
+  RecSel JackParser.SymbolTable.Var
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.Var ->
+                 case ds of wild { JackParser.SymbolTable.Var ds1 ds2 -> ds2 }) -}
+0dd68c5350849e50e7ede69937b661f4
+  varScope :: JackParser.SymbolTable.Var -> JackParser.Lexer.Scope
+  RecSel JackParser.SymbolTable.Var
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.SymbolTable.Var ->
+                 case ds of wild { JackParser.SymbolTable.Var ds1 ds2 -> ds1 }) -}
+2cd6ad42c4e12e2baf250d4084b5203a
+  whileIndex ::
+    Control.Lens.Type.Lens'
+      JackParser.SymbolTable.SymbolTable GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <S(C(C(S))L),1*U(1*C1(C1(U)),A)><L,1*C1(U)><S,1*U(U,U,U,U,U)>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (3, False, False)
+                (\ @ (f :: * -> *)
+                   $dFunctor :: GHC.Base.Functor f
+                   f1 :: GHC.Types.Int -> f GHC.Types.Int
+                   ds :: JackParser.SymbolTable.SymbolTable ->
+                 case ds of wild { JackParser.SymbolTable.SymbolTable x x1 x2 x3 x4 ->
+                 GHC.Base.fmap
+                   @ f
+                   $dFunctor
+                   @ GHC.Types.Int
+                   @ JackParser.SymbolTable.SymbolTable
+                   (\ y :: GHC.Types.Int ->
+                    JackParser.SymbolTable.SymbolTable x x1 x2 y x4)
+                   (f1 x3) }) -}
+instance GHC.Classes.Eq [JackParser.SymbolTable.ClassVars]
+  = JackParser.SymbolTable.$fEqClassVars
+instance GHC.Classes.Eq [JackParser.SymbolTable.Fun]
+  = JackParser.SymbolTable.$fEqFun
+instance GHC.Classes.Eq [JackParser.SymbolTable.LocalVars]
+  = JackParser.SymbolTable.$fEqLocalVars
+instance GHC.Classes.Eq [JackParser.SymbolTable.SymbolTable]
+  = JackParser.SymbolTable.$fEqSymbolTable
+instance GHC.Classes.Eq [JackParser.SymbolTable.Var]
+  = JackParser.SymbolTable.$fEqVar
+instance GHC.Show.Show [JackParser.SymbolTable.ClassVars]
+  = JackParser.SymbolTable.$fShowClassVars
+instance GHC.Show.Show [JackParser.SymbolTable.Fun]
+  = JackParser.SymbolTable.$fShowFun
+instance GHC.Show.Show [JackParser.SymbolTable.LocalVars]
+  = JackParser.SymbolTable.$fShowLocalVars
+instance GHC.Show.Show [JackParser.SymbolTable.SymbolTable]
+  = JackParser.SymbolTable.$fShowSymbolTable
+instance GHC.Show.Show [JackParser.SymbolTable.Var]
+  = JackParser.SymbolTable.$fShowVar
+"SPEC className @ (Const ID)" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                             (Control.Applicative.Const
+                                                                JackParser.SymbolTable.ID)
+  JackParser.SymbolTable.className @ (Control.Applicative.Const
+                                        JackParser.SymbolTable.ID)
+                                   $dFunctor
+  = JackParser.SymbolTable.className_$sclassName
+"SPEC ifIndex @ Identity" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                         Data.Functor.Identity.Identity
+  JackParser.SymbolTable.ifIndex @ Data.Functor.Identity.Identity
+                                 $dFunctor
+  = JackParser.SymbolTable.ifIndex_$sifIndex
+"SPEC l @ Identity" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                   Data.Functor.Identity.Identity
+  JackParser.SymbolTable.l @ Data.Functor.Identity.Identity $dFunctor
+  = JackParser.SymbolTable.clearLocals_$sl
+"SPEC whileIndex @ (Const Int)" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                               (Control.Applicative.Const
+                                                                  GHC.Types.Int)
+  JackParser.SymbolTable.whileIndex @ (Control.Applicative.Const
+                                         GHC.Types.Int)
+                                    $dFunctor
+  = JackParser.SymbolTable.getIf_$swhileIndex
+"SPEC whileIndex @ Identity" [ALWAYS] forall $dFunctor :: GHC.Base.Functor
+                                                            Data.Functor.Identity.Identity
+  JackParser.SymbolTable.whileIndex @ Data.Functor.Identity.Identity
+                                    $dFunctor
+  = JackParser.SymbolTable.incWhile_$swhileIndex
+"SPEC/JackParser.SymbolTable fromList @ Identifier _" [ALWAYS] forall @ a1
+                                                                      $dOrd :: GHC.Classes.Ord
+                                                                                 JackParser.Lexer.Identifier
+  Data.Map.Base.fromList @ [GHC.Types.Char] @ a1 $dOrd
+  = JackParser.SymbolTable.$sfromList @ a1
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

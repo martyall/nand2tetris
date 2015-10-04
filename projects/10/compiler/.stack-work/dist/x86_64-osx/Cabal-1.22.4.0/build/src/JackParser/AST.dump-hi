@@ -1,0 +1,579 @@
+
+==================== FINAL INTERFACE ====================
+2015-10-03 17:11:13.684167 UTC
+
+interface compi_67JlvSkZUoW2a5wLn384Tq:JackParser.AST 7102
+  interface hash: 30b1d6748ee4b05b5c1f66037574ef00
+  ABI hash: 2366cdca13908dd8002738c77b3fc53c
+  export-list hash: 443fbfc8e8cebc6a0a67c7a24eef3eac
+  orphan hash: ca8f4a2ed7b16435958a8c8252534aa5
+  flag hash: 3e6fb97481ca3c41c4e9e8ac02c8acab
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  JackParser.AST.AST{JackParser.AST.BLOCK JackParser.AST.BRANCH JackParser.AST.CLASS JackParser.AST.DO JackParser.AST.EXPR JackParser.AST.FUN JackParser.AST.LET JackParser.AST.RET JackParser.AST.VAR JackParser.AST.WHILE JackParser.AST.args JackParser.AST.blockBody JackParser.AST.classBody JackParser.AST.className JackParser.AST.elseBranch JackParser.AST.expr JackParser.AST.fun JackParser.AST.funArgs JackParser.AST.funBody JackParser.AST.funName JackParser.AST.funType JackParser.AST.ifCond JackParser.AST.loc JackParser.AST.ret JackParser.AST.retType JackParser.AST.thenBranch JackParser.AST.val JackParser.AST.varNames JackParser.AST.varScope JackParser.AST.varType JackParser.AST.whileBody JackParser.AST.whileCond}
+  JackParser.AST.BLOCK
+  JackParser.AST.EXPR{JackParser.AST.Access JackParser.AST.App JackParser.AST.BExpr JackParser.AST.BoolConst JackParser.AST.Empty JackParser.AST.IntConst JackParser.AST.StrConst JackParser.AST.UExpr JackParser.AST.Var}
+module dependencies: JackParser.Lexer
+package dependencies: array-0.5.1.0@array_E0sTtauuKsGDLZoT7lTbgZ
+                      base-4.8.1.0* binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd
+                      bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH
+                      containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN
+                      deepseq-1.4.1.1@deeps_LbCWUlehDDeLxurARKDH5o ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0 mtl-2.2.1@mtl_KMpng31YRYc5JfMWFZ3FCU
+                      parsec-3.1.9@parse_8fSmqig53hOL2SEu1k9Tv0
+                      text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh
+                      transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+         binary-0.7.5.0@binar_IvYoLp9H6Xy3zEH13MmZwd:Data.Binary.Generic
+         bytestring-0.10.6.0@bytes_6elQVSg5cWdFrvRnfxTUrH:Data.ByteString.Builder
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Show
+         transformers-0.4.2.0@trans_3eG64VdP2vzGjP6wJiCp5X:Control.Monad.Trans.Error
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Functor.Identity
+                         base-4.8.1.0:Data.Monoid base-4.8.1.0:Data.Type.Equality
+                         base-4.8.1.0:Data.Void base-4.8.1.0:GHC.Exts
+                         base-4.8.1.0:GHC.Generics
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntMap.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.IntSet.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Map.Base
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Sequence
+                         containers-0.5.6.2@conta_LKCPrTJwOTOLk4OU37YmeN:Data.Set.Base
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text
+                         text-1.2.1.3@text_1l1AN4I48k37RaQ6fm6CEh:Data.Text.Lazy
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Show b8c65ca3124f92a166c9f05120382442
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+import  -/  JackParser.Lexer 530b85fe2b24277601c13edea12f76d7
+  exports: ceb265d750e2ba0bb23743e627e31c17
+  BOp 53109870470fa3811ff03652ee2530bf
+  Boolean 5585d32fe30beb50bffa4cc11aa621ed
+  FunType fb7036306be5bcfd6aee8801cbc91af6
+  Identifier e84140e2b16d3f29743eb3d453988348
+  IntLit 4e1e3e9e3b22f5b08564606e83c88f94
+  Scope f640582c3ce4c1fa29e06a362c221588
+  TType a8e3fa61288257c55d7fe7259cb3caa5
+  UOp be410ceafbd8c6f0e883a2c57696dc8d
+  VarType 81d0080ec5d744223f7c92c94d651d26
+import  -/  ghc-prim-0.4.0.0:GHC.Classes e1f4ff80f7b5262008a595d29986fb18
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fEqAST :: GHC.Classes.Eq JackParser.AST.AST
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.AST.AST
+                  JackParser.AST.$fEqAST_$c==
+                  JackParser.AST.$fEqAST_$c/= -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fEqAST_$c/= ::
+    JackParser.AST.AST -> JackParser.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a :: JackParser.AST.AST b :: JackParser.AST.AST ->
+                 case JackParser.AST.$fEqAST_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fEqAST_$c== ::
+    JackParser.AST.AST -> JackParser.AST.AST -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fEqEXPR :: GHC.Classes.Eq JackParser.AST.EXPR
+  DFunId[0]
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.AST.EXPR
+                  JackParser.AST.$fEqEXPR_$c==
+                  JackParser.AST.$fEqEXPR_$c/= -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fEqEXPR_$c/= ::
+    JackParser.AST.EXPR -> JackParser.AST.EXPR -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ a :: JackParser.AST.EXPR b :: JackParser.AST.EXPR ->
+                 case JackParser.AST.$fEqEXPR_$c== a b of wild {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False }) -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fEqEXPR_$c== ::
+    JackParser.AST.EXPR -> JackParser.AST.EXPR -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U> -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fShowAST :: GHC.Show.Show JackParser.AST.AST
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.AST.AST
+                  JackParser.AST.$fShowAST_$cshowsPrec
+                  JackParser.AST.$fShowAST_$cshow
+                  JackParser.AST.$fShowAST_$cshowList -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fShowAST_$cshow :: JackParser.AST.AST -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.AST.AST ->
+                 JackParser.AST.$fShowAST_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fShowAST_$cshowList :: [JackParser.AST.AST] -> GHC.Show.ShowS
+  {- Arity: 2 -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $fShowAST_$cshowsPrec ::
+    GHC.Types.Int -> JackParser.AST.AST -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U(U)><S,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ w :: GHC.Types.Int w1 :: JackParser.AST.AST ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 JackParser.AST.$w$cshowsPrec ww1 w1 }) -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fShowEXPR :: GHC.Show.Show JackParser.AST.EXPR
+  DFunId[0]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ JackParser.AST.EXPR
+                  JackParser.AST.$fShowEXPR_$cshowsPrec
+                  JackParser.AST.$fShowEXPR_$cshow
+                  JackParser.AST.$fShowEXPR_$cshowList -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fShowEXPR1 :: JackParser.AST.EXPR -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (JackParser.AST.$fShowEXPR_$cshowsPrec
+                   JackParser.AST.$fShowEXPR2) -}
+b986cec645c73623e318b36145242104
+  $fShowEXPR2 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 0) -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fShowEXPR_$cshow :: JackParser.AST.EXPR -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: JackParser.AST.EXPR ->
+                 JackParser.AST.$fShowEXPR_$cshowsPrec
+                   GHC.Show.shows18
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fShowEXPR_$cshowList :: [JackParser.AST.EXPR] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ JackParser.AST.EXPR
+                   JackParser.AST.$fShowEXPR1) -}
+c94dfaf0a76e5286e3c1da4858607a0c
+  $fShowEXPR_$cshowsPrec ::
+    GHC.Types.Int -> JackParser.AST.EXPR -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,1*U(U)><S,1*U><L,U> -}
+a7b10fb28b67c51149bd25d5acd8a642
+  $s$dmshow1 :: JackParser.AST.AST -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ w :: JackParser.AST.AST ->
+                 JackParser.AST.$w$cshowsPrec 0 w) -}
+29ce55d5bc00aa0227a629c71ea47d33
+  $s$fEq(,) :: GHC.Classes.Eq ([GHC.Types.Char], [GHC.Types.Char])
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ ([GHC.Types.Char], [GHC.Types.Char])
+                  (GHC.Classes.$fEq(,)_$c==
+                     @ [GHC.Types.Char]
+                     @ [GHC.Types.Char]
+                     JackParser.AST.$s$fEq(,)1
+                     JackParser.AST.$s$fEq(,)1)
+                  (GHC.Classes.$fEq(,)_$c/=
+                     @ [GHC.Types.Char]
+                     @ [GHC.Types.Char]
+                     JackParser.AST.$s$fEq(,)1
+                     JackParser.AST.$s$fEq(,)1) -}
+e666faafd9867c22d993236bb4f08fcd
+  $s$fEq(,)1 :: GHC.Classes.Eq GHC.Base.String
+  {- Strictness: m,
+     Unfolding: InlineRule (0, True, True)
+                GHC.Classes.$fEq[]_$s$fEq[]1 -}
+904f8642cf1290d7e1ef9348691a48c7
+  $s$fShow[] :: GHC.Show.Show [JackParser.AST.AST]
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ [JackParser.AST.AST]
+                  JackParser.AST.$s$fShow[]_$s$fShow[]_$cshowsPrec
+                  JackParser.AST.$s$fShow[]_$s$fShow[]_$cshow
+                  JackParser.AST.$s$fShow[]_$s$fShow[]_$cshowList -}
+c4d4dfc46f3e306790556a9d53e41e28
+  $s$fShow[]_$s$fShow[]_$cshow ::
+    [JackParser.AST.AST] -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ x :: [JackParser.AST.AST] ->
+                 JackParser.AST.$fShowAST_$cshowList
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+02e4a5fbae0bcb6e5fcae1ecfbe6358c
+  $s$fShow[]_$s$fShow[]_$cshowList ::
+    [[JackParser.AST.AST]] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ eta :: [[JackParser.AST.AST]] eta1 :: GHC.Base.String ->
+                 GHC.Show.showList__
+                   @ [JackParser.AST.AST]
+                   JackParser.AST.$fShowAST_$cshowList
+                   eta
+                   eta1) -}
+14251f0e2dab73a1fc0c27a9f3f1e862
+  $s$fShow[]_$s$fShow[]_$cshowsPrec ::
+    GHC.Types.Int -> [JackParser.AST.AST] -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A>,
+     Unfolding: InlineRule (1, True, True)
+                (\ ds :: GHC.Types.Int
+                   eta :: [JackParser.AST.AST]
+                   eta1 :: GHC.Base.String ->
+                 JackParser.AST.$fShowAST_$cshowList eta eta1) -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  $w$cshowsPrec ::
+    GHC.Prim.Int# -> JackParser.AST.AST -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <L,U><S,1*U>, Inline: [0] -}
+e014f9bbc1e4585e529e27f0cc7332b5
+  data AST
+    = BLOCK {blockBody :: [JackParser.AST.AST]}
+    | CLASS {className :: JackParser.Lexer.Identifier,
+             classBody :: JackParser.AST.BLOCK}
+    | VAR {varScope :: JackParser.Lexer.Scope,
+           varType :: JackParser.Lexer.VarType,
+           varNames :: [JackParser.Lexer.Identifier]}
+    | FUN {funName :: JackParser.Lexer.Identifier,
+           funType :: JackParser.Lexer.FunType,
+           funArgs :: [(JackParser.Lexer.Identifier, JackParser.Lexer.TType)],
+           retType :: JackParser.Lexer.TType,
+           funBody :: JackParser.AST.BLOCK}
+    | RET {ret :: JackParser.AST.EXPR}
+    | BRANCH {ifCond :: JackParser.AST.EXPR,
+              thenBranch :: JackParser.AST.BLOCK,
+              elseBranch :: GHC.Base.Maybe JackParser.AST.BLOCK}
+    | WHILE {whileCond :: JackParser.AST.EXPR,
+             whileBody :: JackParser.AST.BLOCK}
+    | DO {fun :: JackParser.Lexer.Identifier,
+          args :: [JackParser.AST.EXPR]}
+    | LET {loc :: JackParser.AST.EXPR, val :: JackParser.AST.EXPR}
+    | EXPR {expr :: JackParser.AST.EXPR}
+e014f9bbc1e4585e529e27f0cc7332b5
+  type BLOCK = [JackParser.AST.AST]
+c94dfaf0a76e5286e3c1da4858607a0c
+  data EXPR
+    = Empty
+    | BoolConst JackParser.Lexer.Boolean
+    | IntConst JackParser.Lexer.IntLit
+    | StrConst GHC.Base.String
+    | Var JackParser.Lexer.Identifier
+    | UExpr JackParser.Lexer.UOp JackParser.AST.EXPR
+    | BExpr JackParser.Lexer.BOp
+            JackParser.AST.EXPR
+            JackParser.AST.EXPR
+    | App JackParser.Lexer.Identifier [JackParser.AST.EXPR]
+    | Access JackParser.AST.EXPR JackParser.AST.EXPR
+b964f4c42dae017d02af6c5fadf7d611
+  args :: JackParser.AST.AST -> [JackParser.AST.EXPR]
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.args1
+                   JackParser.AST.DO ds1 ds2 -> ds2 }) -}
+59c442dcda52e86b417025d472d1847f
+  args1 :: [JackParser.AST.EXPR]
+  {- Strictness: b -}
+3281a424f9bb9731bd38bc19cbca0f84
+  blockBody :: JackParser.AST.AST -> [JackParser.AST.AST]
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.blockBody1
+                   JackParser.AST.BLOCK ds1 -> ds1 }) -}
+92d6ac2cdd8d4bd76505df4b2e3acc97
+  blockBody1 :: [JackParser.AST.AST]
+  {- Strictness: b -}
+f33cfdcfa13d8fa271d8be03f35355a8
+  classBody :: JackParser.AST.AST -> JackParser.AST.BLOCK
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.classBody1
+                   JackParser.AST.CLASS ds1 ds2 -> ds2 }) -}
+4279051ed1b434c1af22ada07a23f9f9
+  classBody1 :: JackParser.AST.BLOCK
+  {- Strictness: b -}
+2d5ccd53326275ddf2a859975b10c8c3
+  className :: JackParser.AST.AST -> JackParser.Lexer.Identifier
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.className1
+                   JackParser.AST.CLASS ds1 ds2 -> ds1 }) -}
+001350740d427ebaf10ed404b8ab8075
+  className1 :: JackParser.Lexer.Identifier
+  {- Strictness: b -}
+e89316073d382bff70c4a1f07fdbf1f8
+  elseBranch ::
+    JackParser.AST.AST -> GHC.Base.Maybe JackParser.AST.BLOCK
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.elseBranch1
+                   JackParser.AST.BRANCH ds1 ds2 ds3 -> ds3 }) -}
+32845274604cd4685f40b4c83ddd610d
+  elseBranch1 :: GHC.Base.Maybe JackParser.AST.BLOCK
+  {- Strictness: b -}
+3ceb45d15e63d152639c74c31f04039c
+  expr :: JackParser.AST.AST -> JackParser.AST.EXPR
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.expr1
+                   JackParser.AST.EXPR ds1 -> ds1 }) -}
+00ca6e8374532710df47fd2c5cfb4e4f
+  expr1 :: JackParser.AST.EXPR
+  {- Strictness: b -}
+1c2387d4ebf49c367fb1e3e9ebe1e1d3
+  fun :: JackParser.AST.AST -> JackParser.Lexer.Identifier
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.fun1
+                   JackParser.AST.DO ds1 ds2 -> ds1 }) -}
+6753b779cdfe3c7bee9149ef02ab5ad0
+  fun1 :: JackParser.Lexer.Identifier
+  {- Strictness: b -}
+1c9152f38ab7ecf62790c50b1822c232
+  funArgs ::
+    JackParser.AST.AST
+    -> [(JackParser.Lexer.Identifier, JackParser.Lexer.TType)]
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.funArgs1
+                   JackParser.AST.FUN ds1 ds2 ds3 ds4 ds5 -> ds3 }) -}
+9375301519de457451031997b0dc4672
+  funArgs1 :: [(JackParser.Lexer.Identifier, JackParser.Lexer.TType)]
+  {- Strictness: b -}
+c0c3589ab78d438451195673d27334c6
+  funBody :: JackParser.AST.AST -> JackParser.AST.BLOCK
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.funBody1
+                   JackParser.AST.FUN ds1 ds2 ds3 ds4 ds5 -> ds5 }) -}
+4cace203b5f767a22a5a779d93ae05f9
+  funBody1 :: JackParser.AST.BLOCK
+  {- Strictness: b -}
+4ec4000c25f984952c89ce879980d4b7
+  funName :: JackParser.AST.AST -> JackParser.Lexer.Identifier
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.funName1
+                   JackParser.AST.FUN ds1 ds2 ds3 ds4 ds5 -> ds1 }) -}
+7945e4131ed7e717e8dd993e8d13abc5
+  funName1 :: JackParser.Lexer.Identifier
+  {- Strictness: b -}
+c6e2ccd4d75b31078a20d729177193a9
+  funType :: JackParser.AST.AST -> JackParser.Lexer.FunType
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.funType1
+                   JackParser.AST.FUN ds1 ds2 ds3 ds4 ds5 -> ds2 }) -}
+8cee36c157aae0444e7a8c527d11e6b2
+  funType1 :: JackParser.Lexer.FunType
+  {- Strictness: b -}
+f44a6dc1fa6586ef21a851462512f4eb
+  ifCond :: JackParser.AST.AST -> JackParser.AST.EXPR
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.ifCond1
+                   JackParser.AST.BRANCH ds1 ds2 ds3 -> ds1 }) -}
+b185f1bf442b8572d49fc5910c355533
+  ifCond1 :: JackParser.AST.EXPR
+  {- Strictness: b -}
+047f59b3ca73785cff977990791a3525
+  loc :: JackParser.AST.AST -> JackParser.AST.EXPR
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.loc1
+                   JackParser.AST.LET ds1 ds2 -> ds1 }) -}
+c1d2d65c94e89395a59f54a463366fc0
+  loc1 :: JackParser.AST.EXPR
+  {- Strictness: b -}
+dc5d7fe11f326529eee81eb2040a6b8d
+  ret :: JackParser.AST.AST -> JackParser.AST.EXPR
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.ret1 JackParser.AST.RET ds1 -> ds1 }) -}
+99c145e67dafe751a9c46e635f38c100
+  ret1 :: JackParser.AST.EXPR
+  {- Strictness: b -}
+ee8fdb65de1670a4a92733c4bd73ab6a
+  retType :: JackParser.AST.AST -> JackParser.Lexer.TType
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.retType1
+                   JackParser.AST.FUN ds1 ds2 ds3 ds4 ds5 -> ds4 }) -}
+f5f52f223e8a9ee7ad71576afefef5ff
+  retType1 :: JackParser.Lexer.TType
+  {- Strictness: b -}
+091f3ea13d9146479bdf0a94e5343079
+  thenBranch :: JackParser.AST.AST -> JackParser.AST.BLOCK
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.thenBranch1
+                   JackParser.AST.BRANCH ds1 ds2 ds3 -> ds2 }) -}
+61d4e4c9b86c3eff09cb549b08bcd6cb
+  thenBranch1 :: JackParser.AST.BLOCK
+  {- Strictness: b -}
+7f14b18360d806c0d20b3a34f332318a
+  val :: JackParser.AST.AST -> JackParser.AST.EXPR
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.val1
+                   JackParser.AST.LET ds1 ds2 -> ds2 }) -}
+b27cbb5b81d3b44548900dcad29b8bc1
+  val1 :: JackParser.AST.EXPR
+  {- Strictness: b -}
+b0f60eca1ed93d2fb7ba30d18c32b752
+  varNames :: JackParser.AST.AST -> [JackParser.Lexer.Identifier]
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.varNames1
+                   JackParser.AST.VAR ds1 ds2 ds3 -> ds3 }) -}
+a0e2f4db2b0729ff8edc1aa64c6301df
+  varNames1 :: [JackParser.Lexer.Identifier]
+  {- Strictness: b -}
+d5b287116c78a193d6b16c414899bcae
+  varScope :: JackParser.AST.AST -> JackParser.Lexer.Scope
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.varScope1
+                   JackParser.AST.VAR ds1 ds2 ds3 -> ds1 }) -}
+083d2603a1df4d19957c2b806bc881a7
+  varScope1 :: JackParser.Lexer.Scope
+  {- Strictness: b -}
+e70f902c9fdb9d47854232fbb92575bd
+  varType :: JackParser.AST.AST -> JackParser.Lexer.VarType
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.varType1
+                   JackParser.AST.VAR ds1 ds2 ds3 -> ds2 }) -}
+49f8ca4a37a9ddd5de9907661c00d987
+  varType1 :: JackParser.Lexer.VarType
+  {- Strictness: b -}
+c278befe25b24159e69c4df8ae6330fd
+  whileBody :: JackParser.AST.AST -> JackParser.AST.BLOCK
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.whileBody1
+                   JackParser.AST.WHILE ds1 ds2 -> ds2 }) -}
+2b9dfe73e3d97a06499166be7e454393
+  whileBody1 :: JackParser.AST.BLOCK
+  {- Strictness: b -}
+b3a37b0078afc6d3888eb69ba6fca176
+  whileCond :: JackParser.AST.AST -> JackParser.AST.EXPR
+  RecSel JackParser.AST.AST
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ ds :: JackParser.AST.AST ->
+                 case ds of wild {
+                   DEFAULT -> JackParser.AST.whileCond1
+                   JackParser.AST.WHILE ds1 ds2 -> ds1 }) -}
+2573be0ffb8b778638d38ecd2168ce5f
+  whileCond1 :: JackParser.AST.EXPR
+  {- Strictness: b -}
+instance GHC.Classes.Eq [JackParser.AST.AST]
+  = JackParser.AST.$fEqAST
+instance GHC.Classes.Eq [JackParser.AST.EXPR]
+  = JackParser.AST.$fEqEXPR
+instance GHC.Show.Show [JackParser.AST.AST]
+  = JackParser.AST.$fShowAST
+instance GHC.Show.Show [JackParser.AST.EXPR]
+  = JackParser.AST.$fShowEXPR
+"SPEC/JackParser.AST $fEq(,) @ [Char] @ [Char]" [ALWAYS] forall $dEq :: GHC.Classes.Eq
+                                                                          [GHC.Types.Char]
+                                                                $dEq1 :: GHC.Classes.Eq
+                                                                           [GHC.Types.Char]
+  GHC.Classes.$fEq(,) @ [GHC.Types.Char]
+                      @ [GHC.Types.Char]
+                      $dEq
+                      $dEq1
+  = JackParser.AST.$s$fEq(,)
+"SPEC/JackParser.AST $fShow[] @ AST" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                 JackParser.AST.AST
+  GHC.Show.$fShow[] @ JackParser.AST.AST $dShow
+  = JackParser.AST.$s$fShow[]
+"SPEC/JackParser.AST $fShow[]_$cshow @ AST" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                        JackParser.AST.AST
+  GHC.Show.$fShow[]_$cshow @ JackParser.AST.AST $dShow
+  = JackParser.AST.$s$fShow[]_$s$fShow[]_$cshow
+"SPEC/JackParser.AST $fShow[]_$cshowList @ AST" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                            JackParser.AST.AST
+  GHC.Show.$fShow[]_$cshowList @ JackParser.AST.AST $dShow
+  = JackParser.AST.$s$fShow[]_$s$fShow[]_$cshowList
+"SPEC/JackParser.AST $fShow[]_$cshowsPrec @ AST" [ALWAYS] forall $dShow :: GHC.Show.Show
+                                                                             JackParser.AST.AST
+  GHC.Show.$fShow[]_$cshowsPrec @ JackParser.AST.AST $dShow
+  = JackParser.AST.$s$fShow[]_$s$fShow[]_$cshowsPrec
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

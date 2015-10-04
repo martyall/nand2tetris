@@ -1,0 +1,18 @@
+Configuring prelude-extras-0.4...
+Building prelude-extras-0.4...
+Preprocessing library prelude-extras-0.4...
+[1 of 1] Compiling Prelude.Extras   ( src/Prelude/Extras.hs, .stack-work/dist/x86_64-osx/Cabal-1.22.4.0/build/Prelude/Extras.o )
+
+src/Prelude/Extras.hs:39:1: Warning:
+    The import of ‘Data.Foldable’ is redundant
+      except perhaps to import instances from ‘Data.Foldable’
+    To import instances alone, use: import Data.Foldable()
+
+src/Prelude/Extras.hs:40:1: Warning:
+    The import of ‘Data.Traversable’ is redundant
+      except perhaps to import instances from ‘Data.Traversable’
+    To import instances alone, use: import Data.Traversable()
+In-place registering prelude-extras-0.4...
+Installing library in
+/Users/martyall/.stack/snapshots/x86_64-osx/lts-3.4/7.10.2/lib/x86_64-osx-ghc-7.10.2/prelude-extras-0.4-13F4lGS3Q6l43JZvPq8G4h
+Registering prelude-extras-0.4...
